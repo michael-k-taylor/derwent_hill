@@ -1,0 +1,1 @@
+<?php do_action( 'xtrail_select_get_footer_template' );

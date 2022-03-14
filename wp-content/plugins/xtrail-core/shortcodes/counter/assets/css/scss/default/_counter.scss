@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+
+.qodef-counter-holder {
+    @include qodefRelativeHolderLayout();
+    opacity: 0;
+	transition: opacity 0.2s ease-in;
+	
+	.qodef-counter-inner {
+		position: relative;
+		display: block;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+    .qodef-counter {
+	    display: inline-block;
+	    vertical-align: middle;
+	    font-size: 180px;
+	    line-height: 1em;
+	    font-weight: 700;
+	    letter-spacing: -0.04em;
+	    overflow: hidden;
+	    font-family: $heading-text-font;
+	    @include qodefStrokeFont();
+	    
+	    @include ipad-landscape {
+		    font-size: 130px;
+	    }
+    }
+
+    .qodef-counter-title {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    width: 100%;
+	    margin: 0;
+	    text-align: center;
+	    transform: translateX(-50%) translateY(-50%);
+	    @include qodefHeadingStyle(h4);
+    }
+
+    .qodef-counter-text {
+	    margin: 14px 0 0;
+	    text-align: center;
+    }
+}
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */

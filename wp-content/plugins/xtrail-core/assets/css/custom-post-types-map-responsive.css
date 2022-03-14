@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder .qodef-ps-image-holder.qodef-ps-gallery-images {
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-portfolio-single-holder .qodef-ps-image-holder.qodef-ps-gallery-images .qodef-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder .qodef-ps-info-holder {
+    margin: 20px 0 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-info-holder {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-info-holder {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-content-item {
+    margin: 0 0 48px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-content-item {
+    margin: 0 0 50px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner {
+    padding: 0 10px 0 30%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonial-text {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+/* ==========================================================================
+   Testimonials standard responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+    padding: 0 17%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+    padding: 0 13%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+    padding: 0 4%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+   Testimonials standard responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/xtrail-core/assets/css/custom-post-types-map-responsive.css.map */

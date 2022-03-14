@@ -1,0 +1,311 @@
+.qodef-event-list-holder {
+
+    &.qodef-el-standard {
+
+        &.qodef-event-list-five-columns {
+
+            @include laptop-landscape-large {
+
+                .qodef-event-list-item-holder {
+
+                    .qodef-event-list-category-holder {
+                        top: 160px;
+                    }
+
+                    .qodef-event-list-item-title {
+                        margin: 90px 0 0 0;
+                    }
+                }
+            }
+
+            @include ipad-landscape {
+                
+
+                .qodef-event-list-item-holder {
+                    width: 25%;
+                }
+            }
+
+            @include ipad-portrait {
+
+                .qodef-event-list-item-holder {
+                    width: 33.33%;
+                }
+            }
+        }
+
+        &.qodef-event-list-four-columns {
+
+            @include laptop-landscape-large {
+
+                .qodef-event-list-item-holder {
+
+                    .qodef-event-list-category-holder {
+                        bottom: 100px;
+                    }
+
+                    .qodef-event-list-item-title {
+                        margin: 90px 0 0 0;
+                    }
+                }
+            }
+
+            @include ipad-portrait {
+
+                .qodef-event-list-item-holder {
+                    width: 33.33%;
+                }
+            }
+        }
+
+        &.qodef-event-list-three-columns {
+
+            @include ipad-landscape {
+
+                .qodef-event-list-item-holder {
+
+                    &:nth-child(3n+1) {
+                        clear: both;
+                    }
+                }
+            }
+        }
+
+        @include phone-portrait {
+
+            .qodef-event-list-item-holder {
+                width: 100% !important;
+
+                .qodef-event-list-item-image {
+                    left: auto !important;
+                    right: auto !important;
+                }
+            }
+        }
+    }
+
+    &.qodef-el-chequered {
+
+        @media only screen and (max-width: 1680px) {
+
+            .qodef-event-list-item-holder {
+
+                .qodef-event-list-item-content {
+
+                    .qodef-event-list-item-content-holder {
+                        padding: 0 82px;
+
+                        .qodef-event-list-item-content-inner {
+
+                            .qodef-event-list-category-holder {
+                                top: 15%;
+                            }
+
+                            .qodef-event-info-date {
+
+                                > span {
+                                    display: inline-block;
+                                }
+
+                                .qodef-event-info-date-month,
+                                .qodef-event-info-date-year {
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .qodef-event-list-item-title {
+                                margin: 15px 0 0;
+                            }
+
+                            p.qodef-event-list-excerpt {
+                                margin: 8px 0 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+	    @media (min-width:1025px) and (max-width:1440px) {
+		    .qodef-event-list-item-holder .qodef-event-list-item-content .qodef-event-list-item-content-holder {
+			    display: flex;
+			    padding: 35px 55px;
+			    align-items: flex-end;
+			    height: 100%;
+		    }
+	    }
+
+        @include laptop-landscape-mac {
+
+            .qodef-event-list-item-holder {
+
+                .qodef-event-list-item-content {
+
+                    .qodef-event-list-item-content-holder {
+
+                        .qodef-event-list-item-content-inner {
+	
+	                        .qodef-event-list-category-holder {
+		                        top: 12%;
+	                        }
+
+                            .qodef-event-list-item-title {
+                                margin: 15px 0 0;
+                            }
+
+                            p.qodef-event-list-excerpt {
+                                margin: 8px 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include laptop-landscape-medium {
+
+            .qodef-event-list-item-holder {
+
+                .qodef-event-list-item-content {
+
+                    .qodef-event-list-item-content-holder {
+
+                        .qodef-event-list-item-content-inner {
+
+                            .qodef-event-list-item-title {
+                                margin: 5px 0 0;
+                            }
+
+                            p.qodef-event-list-excerpt {
+                                margin: 8px 0 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include ipad-landscape {
+
+            .qodef-event-list-item-holder {
+                width: 100%;
+
+                .qodef-event-list-item-content,
+                .qodef-event-list-item-image {
+	                
+	                .qodef-safari & {
+		                vertical-align: middle; // Safari doesn't expand to 100% height with table cell display
+	                }
+
+                    .qodef-event-list-item-content-holder {
+                        padding: 0 70px;
+
+                        .qodef-event-list-item-content-inner {
+
+                            .qodef-event-list-category-holder {
+                                top: 45%;
+                            }
+
+                            .qodef-event-info-date {
+
+                                > span {
+                                    display: block;
+                                }
+
+                                .qodef-event-info-date-month,
+                                .qodef-event-info-date-year {
+                                    margin-left: 0;
+                                }
+                            }
+
+                            .qodef-event-list-item-title {
+                                margin: 140px 0 0;
+                            }
+
+                            p.qodef-event-list-excerpt {
+                                margin: 8px 0 37px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include ipad-portrait {
+
+            .qodef-event-list-item-holder {
+
+                .qodef-event-list-item-content {
+
+                    .qodef-event-list-item-content-holder {
+	                    display: flex;
+	                    align-items: flex-end;
+	                    height: 100%;
+                        padding: 0 60px 50px;
+
+                        .qodef-event-list-item-content-inner {
+
+                            .qodef-event-list-category-holder {
+                                top: 12%;
+                            }
+
+                            .qodef-event-list-item-title {
+                                margin: 10px 0 0 0;
+                            }
+
+                            p.qodef-event-list-excerpt {
+                                margin: 8px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include phone-landscape {
+
+            .qodef-event-list-item-holder {
+                @include qodefRelativeHolderLayout();
+
+                > .qodef-event-list-item-image {
+                    @include qodefRelativeHolderLayout();
+                }
+
+                > .qodef-event-list-item-content {
+                    @include qodefRelativeHolderLayout();
+                }
+
+                .qodef-event-list-item-content {
+
+                    .qodef-event-list-item-content-holder {
+                        padding: 70px 50px 40px;
+
+                        .qodef-event-list-item-content-inner {
+
+                            .qodef-event-info-date {
+
+                                > span {
+                                    display: inline-block;
+                                }
+
+                                .qodef-event-info-date-month,
+                                .qodef-event-info-date-year {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        @include phone-portrait {
+	        .qodef-event-list-item-holder .qodef-event-list-item-content .qodef-event-list-item-content-holder {
+		        padding: 40px 50px;
+		        height: 100vw; //Since image is square, we can use this to get equal height
+		        display: flex;
+		        align-items: center;
+	        }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+.qodef-pricing-tables {
+
+	@include ipad-landscape {
+
+		.qodef-price-table {
+
+			&.qodef-pt-active-item {
+
+				.qodef-pt-inner {
+
+					ul {
+
+						li {
+
+							&.qodef-pt-title-holder {
+
+								.qodef-pt-active-item-label {
+									bottom: 35px;
+									left: 33%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.qodef-grid-list.qodef-three-columns {
+
+			.qodef-item-space,
+			.qodef-masonry-grid-sizer {
+				width: 100%;
+			}
+		}
+	}
+
+	@include ipad-portrait {
+
+		.qodef-price-table {
+
+			&.qodef-pt-active-item {
+
+				.qodef-pt-inner {
+
+					ul {
+
+						li {
+
+							&.qodef-pt-title-holder {
+
+								.qodef-pt-active-item-label {
+									bottom: 30px;
+									left: 28%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include phone-landscape {
+
+		.qodef-price-table {
+
+			&.qodef-pt-active-item {
+
+				.qodef-pt-inner {
+
+					ul {
+
+						li {
+
+							&.qodef-pt-title-holder {
+
+								.qodef-pt-active-item-label {
+									left: 62px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */

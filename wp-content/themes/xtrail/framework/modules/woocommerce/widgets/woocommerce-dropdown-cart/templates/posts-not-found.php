@@ -1,0 +1,1 @@
+<span class="qodef-empty-cart"><?php esc_html_e( 'No products in the cart.', 'xtrail' ); ?></span>

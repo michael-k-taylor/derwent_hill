@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Testimonials standard responsive style - begin
+   ========================================================================== */
+
+.qodef-testimonials-holder {
+
+    &.qodef-testimonials-standard {
+
+        @include laptop-landscape-large {
+
+            .qodef-testimonial-text-holder {
+                padding: 0 17%;
+            }
+        }
+
+        @include ipad-landscape {
+
+            .qodef-testimonial-text-holder {
+                padding: 0 13%;
+            }
+        }
+
+        @include ipad-portrait {
+
+            .qodef-testimonial-text-holder {
+                padding: 0 4%;
+            }
+        }
+
+        @include phone-landscape {
+
+            .qodef-testimonial-text-holder {
+                padding: 0;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard responsive style - end
+   ========================================================================== */

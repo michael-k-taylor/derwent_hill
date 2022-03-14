@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Interactive Image With Text shortcode responsive style - begin
+   ========================================================================== */
+
+.qodef-interactive-image-with-text {
+
+    @include laptop-landscape-large {
+
+        .qodef-iiwt-text-text {
+            margin: 16px 11% 0;
+        }
+    }
+
+    @include ipad-landscape {
+	
+	    span.qodef-iiwt-title { //Prevent Safari from cutting font
+		    padding-left: .5em;
+		    padding-right: .5em;
+	    }
+
+        .qodef-iiwt-text-text {
+            margin: 11px 18%;
+        }
+    }
+
+    @include ipad-portrait {
+
+        .qodef-iiwt-text-text {
+            margin: 14px 15%;
+        }
+    }
+
+    @include phone-landscape {
+
+        span.qodef-iiwt-title {
+            font-size: 80px;
+            line-height: 43px;
+        }
+
+        .qodef-iiwt-text-text {
+	        display: none;
+        }
+    
+    
+        .qodef-iiwt-content-inner {
+            margin: .5em 0 0 !important;
+	        
+            &:hover {
+                margin-top: 24px !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Interactive Image With Text shortcode responsive style - end
+   ========================================================================== */

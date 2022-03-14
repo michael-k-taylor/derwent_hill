@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.qodef-section-title-holder {
+    @include qodefRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	&.qodef-st-two-columns {
+		
+		$space_label: ('tiny', 'small', 'normal');
+		$space_width: (5, 10, 15);
+		
+		@for $i from 0 to length($space_label) {
+			&.qodef-st-#{nth($space_label,$i+1)}-space {
+				$column_width: nth($space_width,$i+1);
+				
+				.qodef-st-inner {
+					margin: 0 -#{$column_width}px;
+				}
+			
+				.qodef-st-title,
+				.qodef-st-text {
+					padding: 0 #{$column_width}px;
+				}
+			}
+		}
+		
+		.qodef-st-title,
+		.qodef-st-text {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+			float: left;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		&.qodef-st-title-left {
+			
+			.qodef-st-title {
+				text-align: right;
+			}
+			
+			.qodef-st-text {
+				text-align: left;
+			}
+		}
+		
+		&.qodef-st-title-right {
+			
+			.qodef-st-title {
+				float: right;
+				text-align: left;
+			}
+			
+			.qodef-st-text {
+				text-align: right;
+			}
+		}
+	}
+	
+    .qodef-st-title {
+	    display: block;
+        margin: 0;
+	    
+	    .qodef-st-title-bold {
+		    font-weight: 700;
+	    }
+	    
+	    .qodef-st-title-light {
+		    font-weight: 300;
+	    }
+    }
+    
+    .qodef-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+
+	span.qodef-st-text {
+		font-size: 16px;
+		color: $default-heading-color;
+	}
+
+	.qodef-st-title-underscore {
+		display: inline-block;
+		height: 3px;
+		width: 72px;
+		background-color: $first-main-color;
+		margin: 21px 0 27px;
+		line-height: 27px;
+	}
+
+	&.qodef-side-title {
+
+		.qodef-st-title {
+			display: inline-block;
+		}
+
+		.qodef-st-side-title {
+			margin: 0 0 0 24px;
+			display: inline-block;
+		}
+
+		.qodef-st-title-underscore {
+			display: block;
+		}
+	}
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

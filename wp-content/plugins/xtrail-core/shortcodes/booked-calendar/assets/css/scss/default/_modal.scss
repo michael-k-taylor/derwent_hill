@@ -1,0 +1,225 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// modal window
+
+body {
+    .booked-modal {
+        $gutter: 45px;
+
+        .bm-window {
+	        max-height: 100% !important; //Overrides JS setting for each responsive stage
+            background-color: #ffffff;
+            border-radius: 0;
+            box-shadow: $default-box-shadow;
+            padding: 44px 45px 6px;
+            width: 370px;
+
+            > p {
+                margin: 0 0 20px;
+            }
+
+            .booked-title-bar {
+                background: transparent !important;
+                border-radius: 0;
+                color: $default-text-color !important;
+                margin: 0;
+                padding: 42px $gutter 10px !important;
+
+                font-family: $heading-text-font;
+                font-size: 20px !important;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                * {
+                    @include qodefTypographyLayout();
+                }
+
+                i.fa {
+                    color: $first-main-color;
+                }
+
+                &:after {
+                    content: '';
+                    margin-top: 12px;
+                    display: block;
+                    width: 72px;
+                    height: 3px;
+                    background-color: $first-main-color;
+                }
+            }
+
+            a:not(.close) {
+                color: $first-main-color;
+
+                &:hover {
+                    color: $default-text-color;
+                }
+            }
+
+            .close {
+                color: $default-text-color;
+                display: block;
+                height: 30px;
+                line-height: 30px;
+                right: 13px;
+                text-align: center;
+                top: 13px;
+                width: 30px;
+
+                transition: color .2s ease-out;
+
+                &:hover {
+                    color: $default-text-color;
+                }
+
+                i {
+                    font-family: 'ElegantIcons';
+                    font-size: 30px;
+                    top: 0;
+                    position: relative;
+
+                    &:before {
+                        content: '\4d';
+                    }
+                }
+            }
+
+            .booked-scrollable {
+                background-color: transparent;
+                padding: 41px 0 9px;
+            }
+
+            .booked-form {
+	            
+	            padding-bottom: 35px;
+
+                .booked-appointments {
+                    background-color: #f3f2f2;
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: none;
+                    padding: 20px 25px 20px 25px;
+                }
+
+                .calendar-name {
+                    display: none;
+                }
+
+                .appointment-title {
+                    font-family: $heading-text-font;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $default-heading-color;
+                    text-transform: uppercase;
+                }
+
+                .appointment-info {
+                    font-size: 14px;
+                }
+
+                .field {
+
+                    label.field-label {
+                        font-family: $heading-text-font;
+                        font-size: 15px;
+                        text-transform: uppercase;
+
+                        .required-asterisk {
+                            color: $default-heading-color;
+                        }
+                    }
+
+                    p.field-small-p {
+                        margin: -5px 0 9px;
+                    }
+
+                    input[type=text],
+                    input[type=email] {
+                        display: block;
+                        width: 100%;
+                        border: 1px solid #000;
+                        padding: 13px 17px;
+                        font-size: 15px;
+                        color: #000;
+                        border-radius: 0;
+
+                        @include qodefPlaceholder {
+                            color: #000 !important;
+                        }
+                    }
+
+                    input[type=text] {
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+
+            .button {
+                padding: 12px 35px;
+                cursor: pointer;
+                float: left;
+
+                @include qodefButtonDefaultStyle();
+
+                font-size: 16px;
+
+                @media (max-width: 420px) {
+                    letter-spacing: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 100%;
+                }
+
+                &:last-child {
+                    margin-left: 10px;
+                    background-color: #000 !important;
+                    color: $default-background-color !important;
+                    border: 1px solid #000 !important;
+                    
+                    @include phone-landscape {
+                        margin: 10px 0 0;
+                    }
+                }
+            }
+
+            input[type=submit].button-primary {
+                @include qodefButtonSolidColor(!important);
+
+                &:hover {
+                    @include qodefButtonSolidHoverColor(!important);
+                }
+            }
+
+            button.cancel {
+                @include qodefButtonOutlineColor(!important);
+
+                &:hover {
+                    background-color: #171717 !important;
+                    color:#fff;
+                }
+            }
+    
+            .booked-icon {
+                -webkit-font-smoothing: none;
+            }
+	
+	        @include phone-portrait {
+		        padding-bottom: 9px;
+	        }
+	        
+	        @include smaller-phone-portrait {
+		        width: 300px;
+		        padding: 64px 35px 0;
+		        
+		        .booked-title-bar {
+			        padding: 32px 35px 10px !important;
+		        }
+	        }
+        }
+    }
+}
+
+
+
+body.qodef-ms-explorer .booked-modal .bm-window .button:last-child {
+	margin-left: 9px;
+}

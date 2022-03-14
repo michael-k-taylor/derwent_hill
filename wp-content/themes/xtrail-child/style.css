@@ -1,0 +1,20 @@
+/*
+Theme Name: Xtrail Child
+Theme URI: https://xtrail.qodeinteractive.com/
+Description: A child theme of Xtrail Theme
+Author: Select Themes
+Author URI: http://themeforest.net/user/select-themes
+Version: 1.0.1
+Text Domain: xtrail
+Template: xtrail
+*/
+
+
+.qodef-mobile-header .qodef-mobile-logo-wrapper img {
+    height: 65px!important;
+    margin-top: 10px;
+}
+
+.qodef-mobile-logo-wrapper a {
+    height:auto!important;
+}

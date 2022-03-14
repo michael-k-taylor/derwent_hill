@@ -1,0 +1,399 @@
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+
+.qodef-portfolio-list-holder {
+    @include qodefRelativeHolderLayout();
+
+	/***** Article Global Style - begin *****/
+
+    article {
+
+	    .touch & {
+		    cursor: pointer;
+	    }
+
+	    .qodef-pl-item-inner {
+		    @include qodefRelativeHolderLayout();
+	    }
+	    
+	    .qodef-pli-image {
+		    @include qodefRelativeHolderLayout();
+		    
+		    a {
+			    z-index: 1;
+		    }
+		    
+		    img {
+			    display: block;
+			    width: 100%;
+		    }
+	    }
+
+	    .qodef-pli-link {
+		    @include qodefAbsoluteHolderLayout();
+	    }
+
+	    .qodef-pli-text-wrapper {
+	        @include qodefTableLayout();
+	    }
+
+	    .qodef-pli-text {
+		    @include qodefTableCellLayout();
+
+		    .qodef-pli-title {
+				margin: 0;
+		    }
+
+		    .qodef-pli-category-holder {
+			    position: relative;
+			    display: block;
+			    margin: 1px 0 0;
+			    
+			    a {
+				    position: relative;
+				    display: inline-block;
+				    vertical-align: middle;
+				    padding: 0 6px 0 0;
+				    margin: 0 3px 0 0;
+				    color: inherit;
+				    z-index: 8;
+				    
+				    &:after {
+					    position: absolute;
+					    top: 0;
+					    right: -4px;
+					    content: '/';
+					    color: inherit;
+					    font-size: 12px;
+					    line-height: inherit;
+				    }
+
+				    &:last-child {
+					    margin: 0;
+					    padding: 0;
+					    
+					    &:after {
+						    display: none;
+					    }
+				    }
+				    
+				    &:hover {
+					    //color: $first-main-color;
+					    color: inherit;
+					    
+					    &:after {
+						    //color: $default-text-color;
+						    color: inherit;
+					    }
+				    }
+			    }
+		    }
+
+		    .qodef-pli-excerpt {
+			    margin: 3px 0 0;
+		    }
+	    }
+    }
+
+	/***** Article Global Style - end *****/
+	
+	/***** Specific Global Style - begin *****/
+	
+	&.qodef-pl-has-shadow {
+		
+		article {
+			
+			.qodef-pli-image {
+				box-shadow: $default-box-shadow;
+			}
+		}
+	}
+	
+	&.qodef-pl-has-filter {
+		
+		.qodef-pl-inner {
+			overflow: hidden;
+		}
+	}
+	
+	&.qodef-pl-no-content {
+		
+		.qodef-pli-text-holder {
+			display: none;
+		}
+	}
+	/***** Specific Global Style - end *****/
+	
+	&.qodef-pl-masonry {
+
+        &.qodef-fixed-masonry-items {
+	        
+            article {
+	            
+                .qodef-pl-item-inner,
+                .qodef-pli-image {
+		            height: 100%;
+	            }
+            }
+        }
+	}
+
+	/***** Portfolio Types - end *****/
+
+	/***** Additional Features - begin *****/
+
+	&.qodef-pl-has-animation {
+
+		article {
+			opacity: 0;
+			transform: translateY(80px);
+			transition: opacity .8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform .8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+
+			&.qodef-item-show {
+				opacity: 1;
+				transform: translateY(0);
+
+				&.qodef-item-shown {
+					transition: none;
+				}
+			}
+			
+			.touch & {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+
+	/***** Additional Features - end *****/
+	
+	&.qodef-tiny-space .qodef-pl-load-more-holder {
+		margin-bottom: 10px;
+	}
+	&.qodef-small-space .qodef-pl-load-more-holder {
+		margin-bottom: 20px;
+	}
+	&.qodef-normal-space .qodef-pl-load-more-holder {
+		margin-bottom: 30px;
+	}
+	&.qodef-medium-space .qodef-pl-load-more-holder {
+		margin-bottom: 40px;
+	}
+	&.qodef-large-space .qodef-pl-load-more-holder {
+		margin-bottom: 50px;
+	}
+	&.qodef-huge-space .qodef-pl-load-more-holder {
+		margin-bottom: 80px;
+	}
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+
+.qodef-pl-filter-holder {
+    @include qodefRelativeHolderLayout();
+    margin: 0 0 30px;
+    text-align: center;
+
+    ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0 10px;
+	        padding: 0 22px;
+            cursor: pointer;
+	        
+	        @include laptop-landscape-large {
+		        padding: 0 16px;
+	        }
+	
+	        @include ipad-landscape {
+		        padding: 0 10px;
+	        }
+
+            span {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: $default-heading-color;
+	            @include qodefHeadingStyle(h6);
+                white-space: nowrap;
+	            transition: color .2s ease-out;
+            }
+
+            &.qodef-pl-current,
+            &:hover {
+
+                span {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+
+.qodef-portfolio-list-holder {
+	
+	&.qodef-pl-pag-standard {
+		
+		.qodef-pl-inner {
+			opacity: 1;
+			transition: opacity .2s ease-out;
+		}
+		
+		&.qodef-pl-pag-standard-animate {
+			
+			.qodef-pl-inner {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.qodef-pl-standard-pagination {
+	@include qodefStandardPaginationStyle('shortcode');
+}
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+
+.qodef-pl-load-more-holder {
+	@include qodefRelativeHolderLayout();
+
+    .qodef-pl-load-more {
+	    margin: 60px 0 0;
+	    text-align: center;
+	    
+	    .tax-portfolio-category & {
+		    margin-top: 35px;
+		    margin-bottom: 20px;
+	    }
+    }
+}
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+
+.qodef-pl-loading {
+	position: relative;
+	display: none;
+	width: 100%;
+	margin: 40px 0 20px;
+	color: $default-heading-color;
+	text-align: center;
+
+	&.qodef-filter-trigger {
+		position: absolute;
+		top: 250px;
+		left: 0;
+	}
+	
+    &.qodef-standard-pag-trigger {
+		position: absolute;
+		top: 50px;
+		left: 0;
+	
+	    .qodef-pl-has-filter & {
+		    top: 150px;
+	    }
+    }
+
+	&.qodef-showing {
+		display: block;
+	}
+
+	> div {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 14px;
+		margin: 0 3px;
+		background-color: $default-heading-color;
+		border-radius: 100%;
+		animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	}
+
+	.qodef-pl-loading-bounce1 {
+		animation-delay: -0.32s;
+	}
+
+	.qodef-pl-loading-bounce2 {
+		animation-delay: -0.16s;
+	}
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+	}
+}
+
+@-moz-keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		-moz-transform: scale(0);
+	}
+	40% {
+		-moz-transform: scale(1.0);
+	}
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		transform: scale(0);
+	}
+	40% {
+		transform: scale(1.0);
+	}
+}
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Portfolio category/archive specific styles - start
+   ========================================================================== */
+
+@media (min-width:1024px) {
+	body.archive.tax-portfolio-category .qodef-content .qodef-content-inner>.qodef-container>.qodef-container-inner {
+		padding-top: 150px;
+		padding-bottom: 113px
+	}
+}
+
+/* ==========================================================================
+   Portfolio category/archive specific styles - end
+   ========================================================================== */

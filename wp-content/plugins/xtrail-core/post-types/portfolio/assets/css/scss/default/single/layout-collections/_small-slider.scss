@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	
+	&.qodef-ps-small-slider-layout {
+		
+		.qodef-ps-image-holder {
+			margin: 0;
+			
+			.qodef-ps-image-inner {
+				visibility: hidden;
+			}
+			
+			.qodef-ps-image {
+				
+				img {
+					width: 100%;
+				}
+			}
+
+			.owl-nav {
+				position: absolute;
+				display: inline-block;
+				bottom: 0;
+				right: 0;
+				
+				body.qodef-firefox & {
+					right:-0.5px
+				}
+
+				.owl-prev,
+				.owl-next {
+					position: relative;
+					top: 0;
+					transform: translateY(0);
+					width: 90px;
+					height: 50px;
+					line-height: 50px;
+					margin: 0;
+					padding: 0;
+					background-color: $default-background-color;
+					color: $default-heading-color;
+					z-index: 3;
+
+					span {
+						font-family: $heading-text-font;
+						font-size: 14px;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
+
+				.owl-prev {
+					left: 0;
+					padding-left: 20px;
+					text-align: left;
+
+					&:hover {
+
+						.qodef-prev-dash {
+
+							&:before {
+								width: 15px;
+							}
+						}
+					}
+				}
+
+				.owl-next {
+					right: 0;
+					padding-right: 20px;
+					text-align: right;
+
+					&:hover {
+
+						.qodef-next-dash {
+
+							&:after {
+								width: 15px;
+							}
+						}
+					}
+				}
+
+				.qodef-prev-icon,
+				.qodef-next-icon {
+					display: none;
+				}
+
+				.qodef-prev-text,
+				.qodef-next-text {
+					position: relative;
+				}
+
+				.qodef-prev-dash {
+
+					&:before {
+						content: '';
+						position: relative;
+						display: inline-block;
+						margin: -2px 5px 0 0;
+						width: 29px;
+						height: 1px;
+						vertical-align: middle;
+						background-color: $default-heading-color;
+						transition: width .3s ease-out;
+					}
+				}
+
+				.qodef-next-dash {
+
+					&:after {
+						content: '';
+						position: relative;
+						display: inline-block;
+						margin: -2px 0 0 5px;
+						width: 29px;
+						height: 1px;
+						vertical-align: middle;
+						background-color: $default-heading-color;
+						transition: width .3s ease-out;
+					}
+				}
+			}
+		}
+		
+		.qodef-ps-content-item {
+			margin: 0 0 37px;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */

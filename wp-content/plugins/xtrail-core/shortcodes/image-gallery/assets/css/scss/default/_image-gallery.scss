@@ -1,0 +1,304 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+.qodef-image-gallery {
+	@include qodefRelativeHolderLayout();
+	
+	&.qodef-has-shadow {
+	
+		.qodef-ig-image-inner {
+			box-shadow: $default-box-shadow;
+		}
+		
+		&.qodef-ig-slider-type,
+		&.qodef-ig-carousel-type {
+			
+			.owl-stage-outer {
+				padding: 0 0 20px;
+			}
+			
+			.qodef-ig-image {
+				box-shadow: $default-box-shadow;
+			}
+		}
+	}
+	
+	.qodef-ig-image {
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.qodef-ig-image-inner {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	.qodef-ig-slider {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	/***** Image Gallery Masonry Style - begin *****/
+	
+	&.qodef-ig-masonry-type {
+		
+		.qodef-ig-image {
+			
+			&.qodef-fixed-masonry-item {
+				
+				.qodef-ig-image-inner,
+				a {
+					height: 100%;
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Masonry Style - end *****/
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-custom-link {
+		
+		.qodef-ig-image {
+			
+			a {
+				@include qodefImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-lightbox {
+
+		.qodef-ig-lightbox {
+			@include qodefImageZoomHoverStyle();
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-zoom {
+		
+		.qodef-ig-image {
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					transform: scale(1.04);
+				}
+			}
+			
+			.qodef-ig-image-inner {
+				overflow: hidden;
+			}
+			
+			img {
+				transform: scale(1);
+				transition: transform .3s ease-in-out;
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.qodef-image-behavior-grayscale {
+		
+		.qodef-ig-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				transition: all .3s ease-in-out;
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+
+	.qodef-owl-slider {
+
+		.owl-nav {
+			position: absolute;
+			display: inline-block;
+			bottom: 0;
+
+			.owl-prev,
+			.owl-next {
+				position: relative;
+				top: 0;
+				transform: translateY(0);
+				width: 90px;
+				height: 50px;
+				line-height: 50px;
+				margin: 0;
+				padding: 0;
+				color: $default-heading-color;
+				background-color: $default-background-color;
+				z-index: 3;
+
+				span {
+					font-family: $heading-text-font;
+					font-size: 14px;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+
+			.owl-prev {
+				left: 0;
+				padding-left: 20px;
+				text-align: left;
+
+				&:hover {
+
+					.qodef-prev-dash {
+
+						&:before {
+							width: 15px;
+						}
+					}
+				}
+			}
+
+			.owl-next {
+				right: 0;
+				padding-right: 20px;
+				text-align: right;
+
+				&:hover {
+
+					.qodef-next-dash {
+
+						&:after {
+							width: 15px;
+						}
+					}
+				}
+			}
+
+			.qodef-prev-icon,
+			.qodef-next-icon {
+				display: none;
+			}
+
+			.qodef-prev-text,
+			.qodef-next-text {
+				position: relative;
+			}
+
+			.qodef-prev-dash {
+
+				&:before {
+					content: '';
+					position: relative;
+					display: inline-block;
+					margin: -2px 5px 0 0;
+					width: 29px;
+					height: 1px;
+					vertical-align: middle;
+					background-color: $default-heading-color;
+					transition: width .3s ease-out;
+				}
+			}
+
+			.qodef-next-dash {
+
+				&:after {
+					content: '';
+					position: relative;
+					display: inline-block;
+					margin: -2px 0 0 5px;
+					width: 29px;
+					height: 1px;
+					vertical-align: middle;
+					background-color: $default-heading-color;
+					transition: width .3s ease-out;
+				}
+			}
+		}
+
+		&.qodef-slider-has-both-nav {
+
+			.owl-nav {
+				bottom: 50px;
+			}
+		}
+
+		.owl-dots {
+			margin: 25px 0 0;
+		}
+	}
+
+	&.qodef-has-pattern-background {
+
+		.qodef-pattern-overlay {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 29px;
+			right: 29px;
+			background-image: url('../../../xtrail-core/assets/img/pattern_background.png');
+			background-repeat: repeat;
+			transition: .5s;
+			transform: translate3d(29px, -29px, 0);
+
+			&.qodef-pattern-appear {
+				transform: translate3d(0, 0, 0);
+			}
+			
+			@include laptop-landscape-medium {
+				top:15px;
+				right: 15px;
+				background-size: 100%;
+			}
+		}
+
+		@include phone-landscape {
+			.qodef-pattern-overlay {
+				top: 16px;
+				right: 16px;
+			}
+		}
+
+		&.qodef-slider-has-both-nav {
+
+			.qodef-pattern-overlay {
+				height: calc(100% - 50px);
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */

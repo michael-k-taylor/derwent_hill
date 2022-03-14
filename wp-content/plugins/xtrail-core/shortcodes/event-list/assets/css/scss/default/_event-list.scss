@@ -1,0 +1,445 @@
+.qodef-event-list-holder {
+    @include qodefRelativeHolderLayout();
+
+    /***** Event Item Standard Style - begin *****/
+
+    &.qodef-el-standard {
+        display: flex;
+        flex-wrap: wrap;
+
+        .qodef-event-list-item-holder {
+            position: relative;
+            background-color: #0a0a0a;
+            border: 1px solid;
+            border-color: #252525;
+            box-sizing: border-box;
+
+            &:hover {
+
+                @include ipad-landscape {
+                    .qodef-event-list-item-image {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            > a {
+                @include qodefAbsoluteHolderLayout;
+                z-index: 2;
+            }
+
+            .qodef-event-list-item-content {
+                padding: 36px 27px 22px;
+                box-sizing: border-box;
+            }
+
+            .qodef-event-info-date {
+                font-family: $heading-text-font;
+                font-weight: 700;
+                color: $default-background-color;
+                text-transform: uppercase;
+
+                > span {
+                    display: block;
+                }
+
+                .qodef-event-info-date-date {
+                    font-size: 40px;
+                    letter-spacing: -0.06em;
+                }
+
+                .qodef-event-info-date-month,
+                .qodef-event-info-date-year {
+                    font-size: 16px;
+                    line-height: 1.25em;
+                    letter-spacing: -0.025em;
+                }
+
+                .qodef-event-info-date-month {
+                    margin-top: 16px;
+                }
+            }
+
+            .qodef-event-list-category-holder {
+                position: absolute;
+                top: 190px;
+                left: 0;
+                padding: 0 13px;
+                background-color: $first-main-color;
+                z-index: 0;
+
+                .qodef-event-list-category {
+                    position: relative;
+                    font-family: $heading-text-font;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: -0.025em;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    background-color: $first-main-color;
+                    transform-origin: bottom left;
+                    -ms-transform: skew(-15deg, 0deg);
+                    -webkit-transform: skew(-15deg, 0deg);
+                    transform: skew(-15deg, 0deg);
+                }
+            }
+
+            .qodef-event-list-item-title {
+                margin: 125px 0 0 0;
+                color: $default-background-color;
+
+                a {
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+            }
+
+            .qodef-event-list-item-image {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                left: 96px;
+                bottom: 74px;
+                z-index: 120;
+                overflow: hidden;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .45s ease-out;
+
+                @include ipad-landscape {
+                    display: none;
+                }
+
+                &.right {
+                    right: 96px;
+                    left: auto;
+                }
+
+                .qodef-event-list-item-image-inner {
+                    display: block;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.qodef-event-list-one-column {
+
+            .qodef-event-list-item-holder {
+
+                .qodef-event-list-item-image {
+                    left: auto !important;
+                    right: auto !important;
+                }
+            }
+        }
+    }
+
+    /***** Event Item Chequered Style - begin *****/
+
+    &.qodef-el-chequered {
+
+        .qodef-event-list-item-holder {
+            @include qodefTableLayout();
+            float: left;
+            background-color: #151515;
+	
+	        @media (min-width:680px) and (max-width:1279px) {
+		        &:nth-child(2n + 1) {
+			        direction: rtl;
+		        }
+	        }
+	        
+            @media (min-width:1280px) {
+                &:nth-child(4n + 1),
+                &:nth-child(4n + 2) {
+                    direction: rtl;
+                }
+            }
+	        
+            .qodef-event-list-item-image,
+            .qodef-event-list-item-content {
+                @include qodefTableCellLayout();
+	            
+	            .qodef-safari & {
+		            vertical-align: bottom;
+	            }
+
+                .qodef-event-list-item-content-inner {
+
+                    p.qodef-event-list-excerpt {
+                        margin: 8px 0 22px;
+                        font-size: 16px;
+                        color: $default-background-color;
+                    }
+                }
+            }
+
+            .qodef-event-list-item-content {
+
+                .qodef-event-list-item-content-holder {
+                    padding: 0 75px;
+                    box-sizing: border-box;
+
+                    .qodef-event-list-item-content-inner {
+                        direction: initial;
+	                    
+	                    .qodef-ms-explorer & {
+		                    text-align: left;
+	                    }
+                    }
+                }
+            }
+
+            .qodef-event-info-date {
+                font-family: $heading-text-font;
+                font-weight: 700;
+                color: $default-background-color;
+                text-transform: uppercase;
+
+                > span {
+                    display: block;
+                }
+
+                .qodef-event-info-date-date {
+                    font-size: 40px;
+                    letter-spacing: -0.06em;
+	                margin-top: 15px;
+                }
+
+                .qodef-event-info-date-month,
+                .qodef-event-info-date-year {
+                    font-size: 16px;
+                    line-height: 1.25em;
+                    letter-spacing: -0.025em;
+                }
+
+                .qodef-event-info-date-month {
+                    margin-top: 16px;
+                }
+            }
+
+            .qodef-event-list-category-holder {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                padding: 0 13px;
+                background-color: $first-main-color;
+                z-index: 0;
+                transform: translateY(-50%);
+
+                .qodef-event-list-category {
+                    position: relative;
+                    font-family: $heading-text-font;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: -0.025em;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    background-color: $first-main-color;
+                    transform-origin: bottom left;
+                    -ms-transform: skew(-15deg, 0deg);
+                    -webkit-transform: skew(-15deg, 0deg);
+                    transform: skew(-15deg, 0deg);
+                }
+            }
+
+            .qodef-event-list-item-title {
+                margin: 111px 0 0 0;
+                color: $default-background-color;
+
+                a {
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+            }
+
+            .qodef-event-list-item-image {
+                overflow: hidden;
+
+                .qodef-event-list-item-image-inner {
+                    display: block;
+                    width: 100%;
+                    @include qodefImageZoomHoverStyle();
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+
+            &.qodef-event-list-item-hover {
+
+                .qodef-event-list-item-image .qodef-event-list-item-image-inner img {
+                    transition: transform .75s cubic-bezier(.33,.02,0,.93);
+                    transform: scale(1.03);
+                }
+            }
+
+            .qodef-event-list-read-more-button {
+
+                .qodef-btn {
+                    font-size: 14px;
+                    letter-spacing: -.025em;
+                    color: $default-background-color;
+
+                    &:hover {
+                        color: $first-main-color !important; /* overwrite default button hover */
+                    }
+                }
+            }
+        }
+
+        &.qodef-event-skin-light {
+
+            .qodef-event-list-item-holder {
+                background-color: transparent !important; /* overwrite default skin */
+
+                .qodef-event-list-item-image,
+                .qodef-event-list-item-content {
+
+                    .qodef-event-list-item-content-inner {
+
+                        p.qodef-event-list-excerpt {
+                            color: $default-text-color;
+                        }
+                    }
+                }
+
+                .qodef-event-list-category-holder a {
+                    color: $first-main-color;
+
+                    &:hover {
+                        color: $default-text-color; /* overwrite default button hover */
+                    }
+                }
+
+                .qodef-event-list-item-title {
+                    margin: 5px 0 0 0;
+                    color: $default-heading-color;
+
+                    a:hover {
+                        color: $first-main-color;
+                    }
+                }
+
+                .qodef-event-list-read-more-button {
+
+                    .qodef-btn {
+                        color: $first-main-color;
+
+                        &:hover {
+                            color: $first-main-color !important; /* overwrite default button hover */
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Event Item Global Style - begin *****/
+
+    $gallery_columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($gallery_columns_number) {
+
+        &.qodef-event-list-#{nth($gallery_columns_number,$i+1)}-columns {
+
+            .qodef-event-list-item-holder {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) {
+                // set different break point for four and five columns
+                @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                    .qodef-event-list-item-holder {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .qodef-event-list-item-holder {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.qodef-event-list-follow-image-holder {
+    width: 378px;
+    height: 294px;
+    margin-top: 30px;
+    margin-left: 18px;
+    z-index: 12315;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity .1s;
+    pointer-events: none;
+    overflow: hidden;
+
+    @include ipad-landscape {
+        display: none;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+
+        @include laptop-landscape-mac {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+    }
+}

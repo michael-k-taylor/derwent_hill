@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+
+	@include laptop-landscape {
+
+		.qodef-pi-text {
+			padding: 0 10%;
+		}
+	}
+	
+	@include laptop-landscape-mac {
+
+		.qodef-process-item {
+			&:nth-child(3) {
+				top: -67px;
+
+				.qodef-pi-image img {
+					width: 250px;
+					height: 250px;
+				}
+			}
+		}
+		
+		&.qodef-responsive-1366 {
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4) {
+					top: 0;
+				}
+
+				.qodef-pi-content {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	@include ipad-landscape {
+
+		.qodef-pi-content {
+			margin: 28px 0 48px;
+		}
+		
+		&.qodef-responsive-1024 {
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+
+				&:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+					top: 0;
+				}
+
+				.qodef-pi-content {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	@include ipad-portrait {
+		
+		&.qodef-responsive-768 {
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4) {
+					top: 0;
+				}
+
+				.qodef-pi-content {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	@include phone-landscape {
+		
+		&.qodef-responsive-680 {
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4) {
+					top: 0;
+				}
+
+				.qodef-pi-content {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	@include phone-portrait {
+		
+		&.qodef-responsive-480 {
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4) {
+					top: 0;
+				}
+
+				.qodef-pi-content {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */

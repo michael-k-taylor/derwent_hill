@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.qodef-countdown {
+		
+		.countdown-row {
+			
+			.countdown-section {
+				
+				.countdown-amount {
+					font-size: 120px;
+				}
+				
+				.countdown-period {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+    
+    .qodef-countdown {
+        
+        .countdown-row {
+	        
+            &.countdown-show4,
+            &.countdown-show5,
+            &.countdown-show6 {
+	
+	            .countdown-section {
+		            width: 33.33333333333333%;
+	            }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+	
+	.qodef-countdown {
+		
+		.countdown-row {
+			
+			.countdown-section {
+				margin-bottom: 10px;
+				
+				.countdown-amount {
+					font-size: 80px;
+				}
+				
+				.countdown-period {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */

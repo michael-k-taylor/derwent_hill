@@ -1,0 +1,220 @@
+/* ==========================================================================
+# Linked Images style - begin
+========================================================================== */
+.qodef-linked-images {
+	opacity: 0;
+	
+	.qodef-linked-image-holder {
+		float: left;
+
+		.qodef-linked-image-image-holder {
+			position: relative;
+			overflow: hidden;
+			max-width: 100%;
+		}
+		
+		.qodef-linked-image-image {
+			position: relative;
+			display: block;
+			background-size: cover;
+		}
+	}
+
+	.qodef-linked-expanding-images & {
+
+		.qodef-linked-image-holder {
+			
+			.qodef-linked-image-image {
+				background-size: contain;
+			}
+		}
+	}
+
+	&.qodef-linked-images-three-images {
+
+		.qodef-linked-image-holder {
+			width: 33.33%;
+		}
+	}
+
+	&.qodef-linked-images-four-images {
+		.qodef-linked-image-holder {
+			width: 25%;
+		}
+	}
+
+	&.qodef-linked-images-five-images {
+
+		.qodef-linked-image-holder {
+			width: 20%;
+		}
+	}
+
+	.qodef-linked-image-holder {
+
+		.qodef-linked-image-image-holder {
+			position: relative;
+
+			.qodef-linked-image-image {
+				height: 100vh !important;
+				width: auto;
+				max-width: none;
+				transition: transform 0.5s ease-out;
+			}
+
+			.qodef-linked-image-description {
+				z-index: 100;
+			}
+
+			.qodef-linked-image-description-wrapper {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+				.qodef-linked-image-description-inner {
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+					width: 100%;
+					height: 100%;
+					padding: 16% 7%;
+					box-sizing: border-box;
+
+					@include laptop-landscape-mac {
+						padding: 16% 0;
+					}
+				}
+
+				.qodef-linked-image-description {
+					width: 100%;
+					text-align: center;
+
+
+					.qodef-linked-image-title {
+						display: block;
+						position: relative;
+						left: 50%;
+						font-family: $additional-text-font;
+						color: #fff;
+						font-size: 140px;
+						font-weight: 400;
+						line-height: 1em;
+						letter-spacing: 0;
+						margin: 0 0 -7px;
+						white-space: nowrap;
+						text-transform: none;
+						transform: rotate(-5deg) translateX(-50%);
+					}
+
+					.qodef-linked-image-subtitle {
+						color: #ffffff;
+						margin: 0;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		&.qodef-li-zoom {
+
+			.qodef-linked-image-image-holder {
+
+				&:hover {
+
+					.qodef-linked-image-image {
+						transform: scale(1.05);
+					}
+				}
+				
+				.qodef-linked-image-title {
+					bottom: 30px;
+					text-indent: -0.15em;
+				}
+			}
+		}
+
+		&.qodef-li-text-slide {
+
+			.qodef-linked-image-image-holder {
+
+				.qodef-linked-image-description-wrapper {
+
+					.qodef-linked-image-description-inner {
+						padding: 55px 10%;
+						transition: padding .3s ease-out;
+					}
+
+					.qodef-linked-image-description {
+
+						.qodef-linked-image-title {
+							position: absolute;
+							bottom: 300px;
+							font-size: 215px;
+							transform: translateX(-63%) rotate(-20deg);
+							opacity: 0;
+							transition: .3s;
+						}
+
+						.qodef-linked-image-subtitle {
+							text-align: left;
+
+							&:after {
+								content: '';
+								margin: 23px 0 0 0;
+								display: block;
+								width: 41px;
+								height: 3px;
+								background-color: $default-background-color;
+								transition: .3s;
+								transform-origin: 0 50%;
+							}
+						}
+
+						.qodef-linked-image-text {
+							position: absolute;
+							display: block;
+							margin: 17px 49px 0px 0px;
+							font-size: 16px;
+							color: $default-background-color;
+							text-align: left;
+							opacity: 0;
+							transition: opacity .3s;
+						}
+					}
+				}
+
+				&:hover {
+
+					.qodef-linked-image-description-wrapper {
+
+						.qodef-linked-image-description-inner {
+							
+							.no-touch & {
+								padding: 55px 10% 125px;
+							}
+						}
+
+						.qodef-linked-image-description {
+
+							.qodef-linked-image-title {
+								opacity: 1;
+								transform: translateX(-53%) rotate(-20deg);
+								transition: .3s .1s ease-out;
+							}
+
+							.qodef-linked-image-text {
+								opacity: 1;
+								transition: opacity .3s ease-out .1s;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+# Linked Images style - end
+========================================================================== */

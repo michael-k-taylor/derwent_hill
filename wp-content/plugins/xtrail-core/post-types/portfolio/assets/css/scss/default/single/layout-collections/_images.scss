@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+    
+    &.qodef-ps-images-layout {
+
+        > .qodef-grid-row {
+            margin-bottom: 45px;
+        }
+    
+        .qodef-ps-image-holder {
+            margin: 0;
+	        
+            .qodef-ps-image {
+                margin: 0 0 30px;
+
+                a {
+                    @include qodefImageZoomHoverStyle(1.02);
+                }
+                
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */

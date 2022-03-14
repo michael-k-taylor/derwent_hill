@@ -1,0 +1,35 @@
+1.2
+- Added WordPress 5.7 compatibility
+- Added WooCommerce 5.3.0 compatibility
+- Updated WPBakery Page Builder to 6.6.0
+- Updated Revolution Slider plugin to 6.4.11
+- Updated Timetable Responsive Schedule plugin to 6.6
+- Updated Booked plugin to 2.3.5
+- Updated Xtrail Core to 1.1
+- Updated Xtrail Instagram Feed to 2.0.1
+- Updated Xtrail Twitter Feed to 1.0.2
+- Fixed title background parallax zoom behaviour
+- Fixed Revolution Slider preview functionality
+- Fixed open graph description rendering for pages
+- Improved Countdown shortcode calculation
+- Improved PHP 8 compatibility
+
+1.1.1
+- Updated WPBakery Page Builder to 6.4.1
+- Updated Timetable Responsive Schedule plugin to 6.4
+- Updated Booked plugin to 2.3
+- Updated Xtrail Instagram Feed to 2.0
+- Updated Xtrail Twitter Feed to 1.0.1
+- Removed unused file instagram-redirect.php from Elated Instagram Feed plugin
+- Removed unused file twitter-redirect.php from Elated Twitter Feed plugin
+
+1.1
+- Added WordPress 5.5 compatibility
+- Added WooCommerce 4.5.2 compatibility
+- Updated WPBakery page builder to 6.4.0
+- Updated Revolution Slider plugin to 6.2.23
+- Updated Timetable Responsive Schedule plugin to 6.3
+- Updated Booked plugin to 2.2.6
+- Updated Xtrail Core to 1.0.1
+- Fixed bug with smooth scroll by restoring TweenLite script
+- Fixed issue with recommended plugins

@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .qodef-title-holder.qodef-standard-type .qodef-page-subtitle {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder.qodef-standard-type .qodef-page-subtitle {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-title-holder.qodef-standard-type .qodef-page-subtitle {
+    max-width: 100%;
+  }
+  .qodef-title-holder.qodef-mobile-subtitle-disabled .qodef-page-subtitle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder {
+    height: 250px !important;
+    background-size: cover;
+  }
+  .qodef-title-holder.qodef-has-bg-image .qodef-title-image {
+    display: none;
+  }
+  .qodef-title-holder.qodef-has-bg-image .qodef-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100% !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .qodef-title-holder.qodef-bg-responsive {
+    height: auto !important;
+  }
+  .qodef-title-holder.qodef-bg-responsive .qodef-title-image {
+    display: block;
+  }
+  .qodef-title-holder.qodef-bg-responsive .qodef-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .qodef-title-holder.qodef-bg-mobile-cover, .qodef-title-holder.qodef-bg-parallax {
+    height: 300px !important;
+    background-size: auto;
+  }
+  .qodef-title-holder.qodef-title-va-header-bottom .qodef-title-wrapper {
+    padding-top: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder.qodef-centered-type .qodef-page-subtitle {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Centered Title type responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-title-info,
+  .qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs-info {
+    display: block;
+    width: 100%;
+  }
+  .qodef-title-holder.qodef-standard-with-breadcrumbs-type .qodef-breadcrumbs-info {
+    margin: 10px 0 0;
+    text-align: initial;
+    white-space: inherit;
+  }
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map-responsive.css.map */

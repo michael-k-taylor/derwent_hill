@@ -1,0 +1,2719 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-image-holder .qodef-ps-image:not(.qodef-item-space) {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-image-holder .qodef-ps-image a, .qodef-portfolio-single-holder .qodef-ps-image-holder .qodef-ps-image img {
+  position: relative;
+  display: block;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 4px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item .qodef-ps-info-title {
+  display: inline-block;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item .qodef-section-title-holder .qodef-st-text {
+  margin-top: 5px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item p, .qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item a {
+  margin: 0;
+  display: inline-block;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item .qodef-social-share-holder li a {
+  font-size: 13px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item .qodef-social-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  font-size: 20px;
+  line-height: 1.25em;
+  letter-spacing: -0.025em;
+  margin: 0 15px 0 0;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+  margin: 62px 0 34px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-item:last-of-type {
+  bottom: 40px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-title {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+  min-width: 89px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder > h6.qodef-ps-info-title {
+  font-size: 20px;
+  line-height: 1.25em;
+  letter-spacing: -0.025em;
+  margin: 0 0 12px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-social-title {
+  font-size: 20px;
+  line-height: 1.25em;
+  letter-spacing: -0.025em;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-tag,
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-category {
+  text-transform: capitalize;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-tag:after,
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-category:after {
+  content: ',';
+}
+
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-tag:last-child:after,
+.qodef-portfolio-single-holder .qodef-ps-info-holder .qodef-ps-info-category:last-child:after {
+  content: '';
+}
+
+.qodef-portfolio-single-holder .qodef-ps-content-item .qodef-btn {
+  margin: 28px 0 34px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder .qodef-ps-content-item h6:first-child {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.qodef-portfolio-single-holder .qodef-ps-content-item h1:first-child:after,
+.qodef-portfolio-single-holder .qodef-ps-content-item h2:first-child:after,
+.qodef-portfolio-single-holder .qodef-ps-content-item h3:first-child:after,
+.qodef-portfolio-single-holder .qodef-ps-content-item h4:first-child:after,
+.qodef-portfolio-single-holder .qodef-ps-content-item h5:first-child:after,
+.qodef-portfolio-single-holder .qodef-ps-content-item h6:first-child:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  width: 72px;
+  height: 3px;
+  background-color: #fed620;
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder .qodef-ps-image-holder.qodef-grid-masonry-list .qodef-ps-image a {
+  height: 100%;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h6:first-child {
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h1:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h2:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h3:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h4:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h5:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-content-item h6:first-child:after, .qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h1:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h2:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h3:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h4:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h5:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-content-item h6:first-child:after, .qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h1:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h2:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h3:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h4:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h5:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-content-item h6:first-child:after, .qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h1:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h2:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h3:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h4:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h5:first-child:after,
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-content-item h6:first-child:after {
+  bottom: -23px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-info-holder {
+  padding: 25px 30px 0 111px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-info-holder {
+  padding: 25px 30px 0 111px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder, .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder {
+  padding-left: 22px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-info-holder .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-content-item h6:first-child, .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-content-item h1:first-child,
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-content-item h2:first-child,
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-content-item h3:first-child,
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-content-item h4:first-child,
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-content-item h5:first-child,
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-content-item h6:first-child {
+  margin-top: 21px;
+  margin-bottom: 37px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-navigation, .qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-navigation {
+  margin-top: 42px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-big-masonry-layout .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share, .qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share, .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+  margin: 62px 0 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+  margin: 62px 0 15px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+  margin: 62px 0 20px;
+}
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout > .qodef-grid-row {
+  margin-bottom: 45px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder {
+  width: 100%;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder .qodef-ps-image {
+  float: left;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-gallery-layout .qodef-ps-image-holder .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+.qodef-portfolio-single-holder.qodef-ps-gallery-layout > .qodef-grid-row {
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout {
+  padding: 0 4%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder {
+  margin: 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image {
+  margin: 0 0 30px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+  width: 100%;
+  display: block;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+  width: 100%;
+  display: block;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-image-holder .qodef-ps-image:last-child {
+  margin: 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-huge-images-layout .qodef-ps-content-item {
+  margin: 0 0 37px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .qodef-portfolio-single-holder.qodef-ps-huge-images-layout {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-portfolio-single-holder.qodef-ps-huge-images-layout {
+    padding: 0 30px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-images-layout > .qodef-grid-row {
+  margin-bottom: 45px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder {
+  margin: 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image {
+  margin: 0 0 30px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+.qodef-portfolio-single-holder.qodef-ps-images-layout .qodef-ps-image-holder .qodef-ps-image:last-child {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout > .qodef-grid-row {
+  margin-bottom: 45px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-masonry-layout .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Slider layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-slider-layout > .qodef-grid-row {
+  margin-bottom: 45px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .qodef-ps-image-inner {
+  visibility: hidden;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .qodef-ps-image img {
+  width: 100%;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-next {
+  position: relative;
+  top: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #0a0a0a;
+  z-index: 3;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev span,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-next span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev {
+  left: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev:hover .qodef-prev-dash:before {
+  width: 15px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-next {
+  right: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .owl-next:hover .qodef-next-dash:after {
+  width: 15px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .qodef-prev-icon,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .qodef-next-icon {
+  display: none;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .qodef-prev-text,
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .qodef-next-text {
+  position: relative;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .qodef-prev-dash:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin: -2px 5px 0 0;
+  width: 29px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #0a0a0a;
+  -webkit-transition: width .3s ease-out;
+  -o-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-slider-layout .qodef-ps-image-holder .owl-nav .qodef-next-dash:after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin: -2px 0 0 5px;
+  width: 29px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #0a0a0a;
+  -webkit-transition: width .3s ease-out;
+  -o-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+/* ==========================================================================
+   Portfolio Single - Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder {
+  width: 100%;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder .qodef-ps-image {
+  float: left;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-image-holder .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-gallery-layout .qodef-ps-content-item {
+  margin: 0 0 37px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image {
+  margin: 0 0 30px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-image-holder .qodef-ps-image:last-child {
+  margin: 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-images-layout .qodef-ps-content-item {
+  margin: 0 0 37px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-content-item {
+  margin: 0 0 37px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-image a {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-image a img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-image a img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-image a:hover img, .qodef-portfolio-single-holder.qodef-ps-small-masonry-layout .qodef-ps-image a.qodef-hovered img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder {
+  margin: 0;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .qodef-ps-image-inner {
+  visibility: hidden;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .qodef-ps-image img {
+  width: 100%;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+}
+
+body.qodef-firefox .qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav {
+  right: -0.5px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-next {
+  position: relative;
+  top: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #0a0a0a;
+  z-index: 3;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev span,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-next span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev {
+  left: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-prev:hover .qodef-prev-dash:before {
+  width: 15px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-next {
+  right: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .owl-next:hover .qodef-next-dash:after {
+  width: 15px;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .qodef-prev-icon,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .qodef-next-icon {
+  display: none;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .qodef-prev-text,
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .qodef-next-text {
+  position: relative;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .qodef-prev-dash:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin: -2px 5px 0 0;
+  width: 29px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #0a0a0a;
+  -webkit-transition: width .3s ease-out;
+  -o-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-image-holder .owl-nav .qodef-next-dash:after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin: -2px 0 0 5px;
+  width: 29px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #0a0a0a;
+  -webkit-transition: width .3s ease-out;
+  -o-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+.qodef-portfolio-single-holder.qodef-ps-small-slider-layout .qodef-ps-content-item {
+  margin: 0 0 37px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.qodef-ps-navigation {
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 72px 0;
+  clear: both;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-ps-full-width-custom-layout .qodef-ps-navigation {
+  padding: 0 40px;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 23px;
+  width: 30px;
+  height: 30px;
+  line-height: 1;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a span {
+  margin: 3px;
+  display: inline-block;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 3em;
+  background-color: #111;
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a span.circle-1 {
+  top: 0;
+  left: 0;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a span.circle-2 {
+  top: 0;
+  right: 0;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a span.circle-3 {
+  bottom: 0;
+  left: 0;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a span.circle-4 {
+  bottom: 0;
+  right: 0;
+}
+
+.qodef-ps-navigation .qodef-ps-back-btn a:hover span {
+  background-color: #fed620;
+}
+
+.qodef-ps-navigation .qodef-ps-prev,
+.qodef-ps-navigation .qodef-ps-next {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 49%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-ps-navigation .qodef-ps-prev a,
+.qodef-ps-navigation .qodef-ps-next a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.qodef-ps-navigation .qodef-ps-prev a .qodef-ps-nav-mark,
+.qodef-ps-navigation .qodef-ps-next a .qodef-ps-nav-mark {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.qodef-ps-navigation .qodef-ps-prev a .qodef-ps-nav-mark:before,
+.qodef-ps-navigation .qodef-ps-next a .qodef-ps-nav-mark:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-ps-navigation .qodef-ps-prev a {
+  margin-left: -13px;
+}
+
+.qodef-ps-navigation .qodef-ps-prev a .qodef-ps-nav-mark {
+  left: 0;
+}
+
+.qodef-ps-navigation .qodef-ps-next {
+  text-align: right;
+}
+
+.qodef-ps-navigation .qodef-ps-next a {
+  margin-right: -13px;
+}
+
+.qodef-ps-navigation .qodef-ps-next a .qodef-ps-nav-mark {
+  right: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.qodef-ps-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 30px 0 0;
+  clear: both;
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-posts {
+  margin: 0 -15px;
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-post {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  float: left;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-ps-related-posts-holder .qodef-ps-related-post {
+    width: 50%;
+  }
+  .qodef-ps-related-posts-holder .qodef-ps-related-post:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-ps-related-posts-holder .qodef-ps-related-post {
+    width: 100%;
+  }
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-image a, .qodef-ps-related-posts-holder .qodef-ps-related-image img {
+  display: block;
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-text .qodef-ps-related-title {
+  margin: 0;
+}
+
+.qodef-ps-related-posts-holder .qodef-ps-related-text .qodef-ps-related-categories {
+  margin: 6px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Article Global Style - begin *****/
+  /***** Article Global Style - end *****/
+  /***** Specific Global Style - begin *****/
+  /***** Specific Global Style - end *****/
+  /***** Portfolio Types - end *****/
+  /***** Additional Features - begin *****/
+  /***** Additional Features - end *****/
+}
+
+.touch .qodef-portfolio-list-holder article {
+  cursor: pointer;
+}
+
+.qodef-portfolio-list-holder article .qodef-pl-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-image a {
+  z-index: 1;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-image img {
+  display: block;
+  width: 100%;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-title {
+  margin: 0;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder {
+  position: relative;
+  display: block;
+  margin: 1px 0 0;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px 0 0;
+  margin: 0 3px 0 0;
+  color: inherit;
+  z-index: 8;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder a:after {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  content: '/';
+  color: inherit;
+  font-size: 12px;
+  line-height: inherit;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder a:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder a:last-child:after {
+  display: none;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder a:hover {
+  color: inherit;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-category-holder a:hover:after {
+  color: inherit;
+}
+
+.qodef-portfolio-list-holder article .qodef-pli-text .qodef-pli-excerpt {
+  margin: 3px 0 0;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-has-shadow article .qodef-pli-image {
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-has-filter .qodef-pl-inner {
+  overflow: hidden;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-no-content .qodef-pli-text-holder {
+  display: none;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-masonry.qodef-fixed-masonry-items article .qodef-pl-item-inner,
+.qodef-portfolio-list-holder.qodef-pl-masonry.qodef-fixed-masonry-items article .qodef-pli-image {
+  height: 100%;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-has-animation article {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  transform: translateY(80px);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), -webkit-transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), -webkit-transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  -o-transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), -webkit-transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-has-animation article.qodef-item-show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-has-animation article.qodef-item-show.qodef-item-shown {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.touch .qodef-portfolio-list-holder.qodef-pl-has-animation article {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.qodef-portfolio-list-holder.qodef-tiny-space .qodef-pl-load-more-holder {
+  margin-bottom: 10px;
+}
+
+.qodef-portfolio-list-holder.qodef-small-space .qodef-pl-load-more-holder {
+  margin-bottom: 20px;
+}
+
+.qodef-portfolio-list-holder.qodef-normal-space .qodef-pl-load-more-holder {
+  margin-bottom: 30px;
+}
+
+.qodef-portfolio-list-holder.qodef-medium-space .qodef-pl-load-more-holder {
+  margin-bottom: 40px;
+}
+
+.qodef-portfolio-list-holder.qodef-large-space .qodef-pl-load-more-holder {
+  margin-bottom: 50px;
+}
+
+.qodef-portfolio-list-holder.qodef-huge-space .qodef-pl-load-more-holder {
+  margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+.qodef-pl-filter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.qodef-pl-filter-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.qodef-pl-filter-holder ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+  .qodef-pl-filter-holder ul li {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-pl-filter-holder ul li {
+    padding: 0 10px;
+  }
+}
+
+.qodef-pl-filter-holder ul li span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #0a0a0a;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+  -webkit-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+
+.qodef-pl-filter-holder ul li.qodef-pl-current span, .qodef-pl-filter-holder ul li:hover span {
+  color: #fed620;
+}
+
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder.qodef-pl-pag-standard .qodef-pl-inner {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-pag-standard.qodef-pl-pag-standard-animate .qodef-pl-inner {
+  opacity: 0;
+}
+
+.qodef-pl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 40px 0 0;
+  clear: both;
+}
+
+.qodef-pl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.qodef-pl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+}
+
+.qodef-pl-standard-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+
+.qodef-pl-standard-pagination ul li a:hover {
+  color: #fed620;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-active a {
+  color: #fed620;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-prev, .qodef-pl-standard-pagination ul li.qodef-pag-next, .qodef-pl-standard-pagination ul li.qodef-pag-first, .qodef-pl-standard-pagination ul li.qodef-pag-last {
+  margin: 0 2px;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-prev a, .qodef-pl-standard-pagination ul li.qodef-pag-next a, .qodef-pl-standard-pagination ul li.qodef-pag-first a, .qodef-pl-standard-pagination ul li.qodef-pag-last a {
+  font-size: 20px;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-prev a span, .qodef-pl-standard-pagination ul li.qodef-pag-next a span, .qodef-pl-standard-pagination ul li.qodef-pag-first a span, .qodef-pl-standard-pagination ul li.qodef-pag-last a span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-prev a span:before, .qodef-pl-standard-pagination ul li.qodef-pag-next a span:before, .qodef-pl-standard-pagination ul li.qodef-pag-first a span:before, .qodef-pl-standard-pagination ul li.qodef-pag-last a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-prev a {
+  opacity: 0;
+}
+
+.qodef-pl-standard-pagination ul li.qodef-pag-next a {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+.qodef-pl-load-more-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-pl-load-more-holder .qodef-pl-load-more {
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+.tax-portfolio-category .qodef-pl-load-more-holder .qodef-pl-load-more {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+.qodef-pl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+.qodef-pl-loading.qodef-filter-trigger {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.qodef-pl-loading.qodef-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.qodef-pl-has-filter .qodef-pl-loading.qodef-standard-pag-trigger {
+  top: 150px;
+}
+
+.qodef-pl-loading.qodef-showing {
+  display: block;
+}
+
+.qodef-pl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #0a0a0a;
+  border-radius: 100%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.qodef-pl-loading .qodef-pl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.qodef-pl-loading .qodef-pl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio category/archive specific styles - start
+   ========================================================================== */
+@media (min-width: 1024px) {
+  body.archive.tax-portfolio-category .qodef-content .qodef-content-inner > .qodef-container > .qodef-container-inner {
+    padding-top: 150px;
+    padding-bottom: 113px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio category/archive specific styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay.qodef-pl-has-shadow .qodef-pl-item-inner {
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay article:hover .qodef-pli-text-holder {
+  opacity: 1;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay article .qodef-pl-item-inner {
+  overflow: hidden;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay article .qodef-pli-text .qodef-pli-title,
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay article .qodef-pli-text .qodef-pli-excerpt {
+  color: #fff;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay article .qodef-pli-text .qodef-pli-category-holder a {
+  color: #fff;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay article .qodef-pli-text .qodef-pli-category-holder a:hover {
+  color: #fff;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-overlay .qodef-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 0.4);
+  opacity: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder.qodef-pl-gallery-slide-from-image-bottom.qodef-pl-has-shadow .qodef-pl-item-inner {
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-slide-from-image-bottom article:hover .qodef-pli-text-holder,
+.qodef-portfolio-list-holder.qodef-pl-gallery-slide-from-image-bottom article:hover .qodef-pli-text-wrapper {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-slide-from-image-bottom article .qodef-pl-item-inner {
+  overflow: hidden;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-slide-from-image-bottom .qodef-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  padding: 15px 20px 10px;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1111111;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  -o-transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-gallery-slide-from-image-bottom .qodef-pli-text-wrapper {
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  -o-transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image:hover img, .qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image.qodef-hovered img {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.75s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pl-item-inner {
+  overflow: hidden;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image {
+  overflow: hidden;
+  will-change: transform;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  -o-transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+  transition: transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93), -webkit-transform 0.45s cubic-bezier(0.33, 0.02, 0, 0.93);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .qodef-portfolio-list-holder.qodef-pl-standard-shader article .qodef-pli-image img {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-shader .qodef-pli-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Standard Switch Images style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder.qodef-pl-standard-switch-images article .qodef-pli-image img {
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-switch-images article .qodef-pli-image img:nth-child(1) {
+  opacity: 1;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-switch-images article .qodef-pli-image img:nth-child(2) {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-switch-images article.qodef-pl-has-switch-image:hover .qodef-pli-image img:nth-child(1) {
+  opacity: 1;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-switch-images article.qodef-pl-has-switch-image:hover .qodef-pli-image img:nth-child(2) {
+  opacity: 1;
+}
+
+.qodef-portfolio-list-holder.qodef-pl-standard-switch-images .qodef-pli-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 35px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Standard Switch Images style - end
+   ========================================================================== */
+/* ==========================================================================
+# Testimonial style - begin
+========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-boxed-text {
+  /* Testimonials image  styles */
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-border-around .qodef-testimonial-text-inner {
+  border: 1px solid #e0e4f2;
+  width: calc(100% - 2px);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-text-holder {
+  position: relative;
+  display: block;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-text-holder .qodef-testimonial-text-inner {
+  display: block;
+  text-align: center;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-image {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-image img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-content-inner {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-text-holder {
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 9px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-text-holder .qodef-testimonial-text-inner {
+  text-align: left;
+  background-color: #fff;
+  padding: 0 0 25px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-text-holder .qodef-testimonial-text {
+  margin: 0;
+  padding: 0 20px 0 25px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-text-holder .qodef-testimonial-title {
+  margin: 0 0 16px;
+  padding: 15px 15px 15px 25px;
+  border-bottom: 1px solid #e0e4f2;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-carousel-bottom {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-image {
+  width: 70px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-author {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-author .qodef-testimonials-author-name,
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-author .qodef-testimonials-author-job {
+  margin: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-testimonial-author .qodef-testimonials-author-job {
+  color: rgba(254, 214, 32, 0.4);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed-text .qodef-owl-slider .owl-nav {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-author .qodef-testimonials-author-job,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-author .qodef-testimonials-author-name {
+  color: #fff;
+}
+
+/* ==========================================================================
+# Testimonial style - end
+========================================================================== */
+/* ==========================================================================
+   Testimonials boxed style - begin
+   ========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-boxed {
+  /* Light/Dark styles */
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed .qodef-testimonials {
+  margin: 0 -50px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed .qodef-testimonial-content {
+  padding: 40px 57px 58px;
+  background-color: #fbfbfb;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed .qodef-testimonials-author-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 9px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed .qodef-testimonials-author-holder .qodef-testimonial-image {
+  float: left;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed .qodef-testimonials-author-holder .qodef-testimonial-author {
+  padding: 3px 0 0 110px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed.qodef-testimonials-light .qodef-testimonial-title,
+.qodef-testimonials-holder.qodef-testimonials-boxed.qodef-testimonials-light .qodef-testimonial-text,
+.qodef-testimonials-holder.qodef-testimonials-boxed.qodef-testimonials-light .qodef-testimonial-author {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed.qodef-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed.qodef-testimonials-light .owl-dots .owl-dot:hover span, .qodef-testimonials-holder.qodef-testimonials-boxed.qodef-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-boxed .qodef-owl-slider .owl-nav {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* ==========================================================================
+   Testimonials boxed style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials elegant style - begin
+   ========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-carousel {
+  opacity: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonials {
+    padding: 0;
+  }
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-text {
+  margin-top: 0;
+  font-size: 22px;
+  color: #595959;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-image-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  max-width: 470px;
+  margin: 27px auto 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-image-nav {
+    max-width: 282px;
+  }
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-image-nav .owl-item {
+  cursor: pointer;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-image-nav .owl-item.active.center .qodef-testimonial-image {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-image {
+  position: relative;
+  display: block;
+  width: 94px;
+  height: 94px;
+  -webkit-transform: scale(0.78723);
+  -ms-transform: scale(0.78723);
+  transform: scale(0.78723);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-image img {
+  width: 100% !important;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonial-author {
+  margin-top: 22px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-carousel .qodef-testimonials-author-job {
+  margin-top: 8px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-title,
+.qodef-testimonials-holder.qodef-testimonials-light .qodef-testimonial-text {
+  color: #fff;
+}
+
+.qodef-owl-custom-slider {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1;
+  /* No Js */
+  /*
+     *  Owl Carousel - Animate Plugin
+     */
+}
+
+.qodef-owl-custom-slider.owl-loaded {
+  display: block;
+}
+
+.qodef-owl-custom-slider.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.qodef-owl-custom-slider.owl-hidden {
+  opacity: 0;
+}
+
+.qodef-owl-custom-slider.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.qodef-owl-custom-slider.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qodef-owl-custom-slider.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.qodef-owl-custom-slider.owl-rtl {
+  direction: rtl;
+}
+
+.qodef-owl-custom-slider.owl-rtl .owl-item {
+  float: right;
+}
+
+.no-js .qodef-owl-custom-slider {
+  display: block;
+}
+
+.qodef-owl-custom-slider .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.qodef-owl-custom-slider .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.qodef-owl-custom-slider .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.qodef-owl-custom-slider .owl-wrapper,
+.qodef-owl-custom-slider .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.qodef-owl-custom-slider .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.qodef-owl-custom-slider .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.qodef-owl-custom-slider .owl-item img .owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.qodef-owl-custom-slider .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.qodef-owl-custom-slider .owl-nav.disabled {
+  display: none;
+}
+
+.qodef-owl-custom-slider .owl-nav .owl-prev,
+.qodef-owl-custom-slider .owl-nav .owl-next {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qodef-owl-custom-slider .owl-dots.disabled {
+  display: none;
+}
+
+.qodef-owl-custom-slider .owl-dots .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qodef-owl-custom-slider .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.qodef-owl-custom-slider .owl-animated-in {
+  z-index: 0;
+}
+
+.qodef-owl-custom-slider .owl-animated-out {
+  z-index: 1;
+}
+
+.qodef-owl-custom-slider .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/* ==========================================================================
+   Testimonials elegant style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials image pagination style - begin
+   ========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-image-pagination {
+  /* Light/Dark styles */
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner {
+  visibility: hidden;
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1;
+  padding: 0 50px 0 127px;
+  text-align: center;
+  /* No Js */
+  /*
+             *  Owl Carousel - Animate Plugin
+             */
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 25px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonial-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonial-title {
+  margin: 0;
+  text-align: left;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonial-author {
+  text-align: left;
+  margin: 29px 0 0 1px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonials-author-job {
+  margin: 0;
+  text-align: left;
+  color: #fed620;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .qodef-testimonial-text {
+  margin: 19px 0 0;
+  font-size: 30px;
+  text-align: left;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-stage-outer {
+  z-index: 1;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.qodef-slider-is-moving .owl-item .qodef-block-drag-link {
+  z-index: -1 !important;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-carousel .owl-item img {
+  -webkit-transform: translateZ(0);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-loaded {
+  display: block;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-hidden {
+  opacity: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-rtl {
+  direction: rtl;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner.owl-rtl .owl-item {
+  float: right;
+}
+
+.no-js .qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner {
+  display: block;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-wrapper,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-item img .owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-nav.disabled {
+  display: none;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-nav .owl-prev,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-nav .owl-next {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-animated-in {
+  z-index: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .owl-animated-out {
+  z-index: 1;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .qodef-testimonials-image-pagination-inner .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination {
+  list-style: none;
+  display: inline-block;
+  top: 17px;
+  left: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination .qodef-tsp-item {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 35px;
+  width: 35px;
+  margin: 0 7px 7px 0;
+  cursor: pointer;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination .qodef-tsp-item:nth-child(2n+1) {
+  clear: both;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination .qodef-tsp-item img {
+  position: relative;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination .qodef-tsp-item:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination .qodef-tsp-item.active:after, .qodef-testimonials-holder.qodef-testimonials-image-pagination #qodef-testimonial-pagination .qodef-tsp-item:hover:after {
+  opacity: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .owl-nav {
+  text-align: left;
+  margin-top: 3px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .owl-nav .owl-prev,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .owl-nav .owl-next {
+  position: relative;
+  display: inline-block;
+  top: auto;
+  bottom: 0;
+  -webkit-transform: translateY(0) !important;
+  -ms-transform: translateY(0) !important;
+  transform: translateY(0) !important;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .owl-nav .owl-prev {
+  left: -1px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination .owl-nav .owl-next {
+  left: 12px;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .qodef-testimonial-title,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .qodef-testimonial-text,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .qodef-testimonial-author {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .owl-nav .owl-prev,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .owl-nav .owl-next {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .owl-nav .owl-prev:hover,
+.qodef-testimonials-holder.qodef-testimonials-image-pagination.qodef-testimonials-light .owl-nav .owl-next:hover {
+  color: #fed620;
+}
+
+/* ==========================================================================
+   Testimonials image pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.qodef-testimonials-holder.qodef-testimonials-standard {
+  text-align: center;
+  /* Light/Dark styles */
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 25px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text-holder {
+  padding: 0 28%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-title {
+  margin: 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-author {
+  margin: 57px 0 0;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard .qodef-testimonial-text {
+  margin: 19px 0 0;
+  font-size: 30px;
+  line-height: 1.33em;
+  letter-spacing: -0.01em;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard.qodef-testimonials-light .qodef-testimonial-title,
+.qodef-testimonials-holder.qodef-testimonials-standard.qodef-testimonials-light .qodef-testimonial-text,
+.qodef-testimonials-holder.qodef-testimonials-standard.qodef-testimonials-light .qodef-testimonial-author {
+  color: #fff;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard.qodef-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.qodef-testimonials-holder.qodef-testimonials-standard.qodef-testimonials-light .owl-dots .owl-dot:hover span, .qodef-testimonials-holder.qodef-testimonials-standard.qodef-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.qodef-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder .qodef-testimonials-mark {
+  position: absolute;
+  top: -76px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50px;
+  height: 43px;
+  background-image: url("../../../xtrail-core/post-types/testimonials/shortcodes/testimonials/assets/img/quote-mark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.qodef-testimonials-holder .qodef-testimonials,
+.qodef-testimonials-holder .qodef-testimonial-content,
+.qodef-testimonials-holder .qodef-testimonial-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder .qodef-testimonials {
+  padding: 0 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-title {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-image img {
+  width: auto !important;
+  border-radius: 5em;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav {
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+  margin: 4px 0 0 0;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-prev,
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-next {
+  position: relative;
+  top: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  width: 94px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  color: #0a0a0a;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-prev span,
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-next span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-prev {
+  left: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-prev:hover .qodef-prev-dash:before {
+  width: 15px;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-next {
+  right: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .owl-next:hover .qodef-next-dash:after {
+  width: 15px;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .qodef-prev-icon,
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .qodef-next-icon {
+  display: none;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .qodef-prev-text,
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .qodef-next-text {
+  position: relative;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .qodef-prev-dash:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin: -2px 5px 0 0;
+  width: 29px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #0a0a0a;
+  -webkit-transition: width .3s ease-out;
+  -o-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+.qodef-testimonials-holder .qodef-owl-slider .owl-nav .qodef-next-dash:after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin: -2px 0 0 5px;
+  width: 29px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #0a0a0a;
+  -webkit-transition: width .3s ease-out;
+  -o-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/xtrail-core/assets/css/custom-post-types-map.css.map */

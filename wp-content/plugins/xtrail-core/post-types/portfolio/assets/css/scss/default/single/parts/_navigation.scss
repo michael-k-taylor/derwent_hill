@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.qodef-ps-navigation {
+	position: relative;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	padding: 0;
+	margin: 72px 0;
+	clear: both;
+    box-sizing: border-box;
+
+    .qodef-ps-full-width-custom-layout & {
+        padding: 0 40px;
+    }
+	
+	.qodef-ps-back-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		transform: translateX(-50%) translateY(-50%);
+		
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 23px;
+			width: 30px;
+			height: 30px;
+			line-height: 1;
+			
+			span {
+				margin: 3px;
+				display: inline-block;
+				position: absolute;
+				height: 8px;
+				width: 8px;
+				border-radius: 3em;
+				background-color: #111;
+				transition: background-color .2s ease-out;
+
+				&.circle-1 {
+					top: 0;
+					left: 0;
+				}
+
+				&.circle-2 {
+					top: 0;
+					right: 0;
+				}
+
+				&.circle-3 {
+					bottom: 0;
+					left: 0;
+				}
+
+				&.circle-4 {
+					bottom: 0;
+					right: 0;
+				}
+			}
+			
+			&:hover {
+				span {
+					background-color: $first-main-color;
+				}
+			}
+		}
+	}
+	
+	.qodef-ps-prev,
+	.qodef-ps-next {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 40px;
+			line-height: 40px;
+			
+			.qodef-ps-nav-mark {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+	
+	.qodef-ps-prev {
+		
+		a {
+			margin-left: -13px;
+			
+			.qodef-ps-nav-mark {
+				left: 0;
+			}
+		}
+	}
+	
+	.qodef-ps-next {
+		text-align: right;
+		
+		a {
+			margin-right: -13px;
+			.qodef-ps-nav-mark {
+				right: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

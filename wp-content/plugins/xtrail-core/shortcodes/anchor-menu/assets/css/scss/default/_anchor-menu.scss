@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Anchor menu shortcode - start styles
+   ========================================================================== */
+.qodef-anchor-menu-outer{
+	position: fixed;
+	top: 50%;
+	left: 35px;
+	transform: translateY(-50%);
+	z-index: 110; //more than title and content
+	opacity: 0;
+
+	.qodef-anchor-menu-item{
+		padding: 11px 0px;
+		
+		&.qodef-active-item {
+			
+			.qodef-anchor {
+				color: $first-main-hover-color;
+			}
+		}
+	}
+
+	.qodef-anchor{
+		font-family: $heading-text-font;
+		font-size: 16px;
+		font-weight: 700;
+		color: $default-background-color;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $first-main-hover-color;
+		}
+
+		.qodef-anchor-menu-item-number{
+			display: inline-block;
+			position: relative;
+			padding-right: 1px;
+			width: 30px;
+			-webkit-transform-origin: left center;
+			transform-origin: left center;
+			transform: scale(1);
+			transition: transform .3s ease .3s;
+		}
+
+		.qodef-anchor-menu-item-label{
+			position: relative;
+			display: inline-block;
+			transform: scale(1);
+			-webkit-transform-origin: left center;
+			transform-origin: left center;
+			transition: transform .3s ease .3s
+		}
+	}
+}
+/* ==========================================================================
+   Anchor menu shortcode - end styles
+   ========================================================================== */
+
+@media (min-width:1200px) and (max-width: 1439px)  {
+	body.qodef-has-anchor-menu .qodef-row-grid-section .vc_row {
+		margin-left: 60px;
+		width: 1100px;
+	}
+}
+
+@media (min-width:1440px) and (max-width: 1680px)  {
+	body.qodef-has-anchor-menu .qodef-row-grid-section .vc_row {
+		margin-left: 50px;
+		width: $grid-width-1200;
+	}
+}

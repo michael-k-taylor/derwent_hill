@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	
+    .qodef-ps-image-holder {
+	    
+	    &.qodef-ps-gallery-images {
+		
+		    @include phone-landscape {
+			
+			    .qodef-ps-image {
+				    width: 100% !important; // !important is set to override all other stronger selectors
+			    }
+		    }
+		
+		    /***** Columns Layout - end *****/
+	    }
+    }
+	
+	@include ipad-landscape {
+		
+		.qodef-ps-info-holder {
+			margin: 20px 0 0 !important; // can be set inline in option
+		}
+	}
+
+	&.qodef-ps-small-masonry-layout,
+	&.qodef-ps-small-images-layout,
+	&.qodef-ps-small-gallery-layout,
+	&.qodef-ps-small-slider-layout,
+	&.qodef-ps-huge-images-layout {
+
+		@include ipad-landscape {
+
+			.qodef-ps-info-holder {
+				padding-left: 0;
+			}
+		}
+	}
+
+	&.qodef-ps-images-layout,
+	&.qodef-ps-gallery-layout,
+	&.qodef-ps-slider-layout {
+
+		@include ipad-landscape {
+
+			.qodef-ps-info-holder {
+				padding: 0;
+			}
+		}
+	}
+	
+	&.qodef-ps-small-images-layout {
+		@include ipad-landscape {
+			.qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.qodef-ps-masonry-layout {
+
+		@include ipad-landscape {
+
+			.qodef-ps-info-holder {
+				padding: 0;
+			}
+		}
+	}
+	
+	&.qodef-ps-huge-images-layout {
+		
+		@include ipad-landscape {
+			
+			.qodef-ps-content-item {
+				margin: 0 0 48px;
+			}
+		}
+	}
+	
+	&.qodef-ps-small-slider-layout {
+		
+		@include ipad-landscape {
+			
+			.qodef-ps-content-item {
+				margin: 0 0 50px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */

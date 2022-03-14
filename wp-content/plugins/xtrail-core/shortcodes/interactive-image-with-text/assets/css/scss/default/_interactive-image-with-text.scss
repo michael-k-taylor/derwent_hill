@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Interactive Image With Text shortcode style - begin
+   ========================================================================== */
+
+.qodef-interactive-image-with-text {
+    @include qodefRelativeHolderLayout();
+    
+    > a {
+        @include qodefAbsoluteHolderLayout();
+        z-index: 2;
+    }
+
+    .qodef-iiwt-image {
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        img {
+            transition: .5s;
+            transform: scale(1.01);
+        }
+
+        img {
+            display: block;
+        }
+
+        .qodef-iiwt-overlay {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+            transition: opacity .3s cubic-bezier(0.35, 0.8, 0.35, 0.8);
+        }
+    }
+
+    .qodef-iiwt-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px 50px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+
+        .qodef-iiwt-content-inner {
+            transition: margin-top .3s cubic-bezier(0.35, 0.8, 0.35, 0.8), margin-bottom .3s cubic-bezier(0.35, 0.8, 0.35, 0.8);
+        }
+    }
+
+    .qodef-iiwt-title {
+        margin-top: 0;
+    }
+
+    span.qodef-iiwt-title {
+        display: block;
+        font-size: 116px;
+        font-family: $additional-text-font;
+        text-transform: lowercase;
+        font-weight: 400;
+        line-height: 69px;
+        transform: rotate(-7deg);
+    }
+
+    .qodef-iiwt-text-title {
+        margin: 0;
+        line-height: 1.2em;
+
+        a {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    .qodef-iiwt-separator {
+        transition: transform .3s cubic-bezier(0.35, 0.8, 0.35, 0.8), opacity .3s cubic-bezier(0.35, 0.8, 0.35, 0.8);
+        opacity: 0;
+
+        .qodef-separator {
+            margin-top: 18px;
+            margin-bottom: 8px;
+            width: 72px;
+            border-bottom-width: 3px;
+            transform: scaleX(0);
+            transition: .5s;
+            
+            @include ipad-landscape {
+                display: none;
+            }
+        }
+    }
+
+    .qodef-iiwt-text-text {
+        margin: 16px 24% 0;
+        transition: transform .3s cubic-bezier(0.35, 0.8, 0.35, 0.8), opacity .3s cubic-bezier(0.35, 0.8, 0.35, 0.8);
+        opacity: 0;
+    }
+
+    &:hover {
+
+        .qodef-iiwt-image {
+    
+            img {
+                transform: scale(1.04);
+            }
+        }
+
+        .qodef-iiwt-overlay {
+            opacity: 1;
+        }
+
+        .qodef-separator {
+            transform: scaleX(1);
+        }
+
+        .qodef-iiwt-content-inner {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .qodef-iiwt-separator {
+            transform: translate3d(0, -20px, 0);
+            opacity: 1;
+        }
+
+        .qodef-iiwt-text-text {
+            transform: translate3d(0, -20px, 0);
+            opacity: 1;
+        }
+    }
+}
+
+/* ==========================================================================
+   Interactive Image With Text shortcode style - end
+   ========================================================================== */

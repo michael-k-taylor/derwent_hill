@@ -1,0 +1,305 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// booked calendar
+
+.qodef-booked-calendar {
+	visibility: hidden;
+	opacity: 0;
+	transition: all .6s cubic-bezier(0.12, 0.36, 0.43, 0.66);
+}
+
+body {
+    .booked-calendar-shortcode-wrap {
+        overflow: hidden;
+    
+	    .booked-calendar-wrap {
+	        max-height: 80vh;
+	        overflow-y: scroll;
+            margin-bottom: 0 !important;
+		    
+		    .no-touch & {
+			    margin-right: -17px;
+		    }
+	    }
+	    
+	    @include phone-landscape {
+		    width:300px;
+	    }
+    }
+
+    table.booked-calendar {
+        background-color: #000;
+        border: none !important;
+        border-bottom: none !important;
+
+        thead th {
+            border: none !important;
+            padding-top: 18px !important;
+            padding-bottom: 11px !important;
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // th
+
+        th,
+        thead th,
+        thead tr {
+            background: #000 !important;
+
+            .page-right,
+            .page-left {
+                font-size: 20px;
+                line-height: 2em;
+                color: $default-background-color !important;
+
+                .booked-icon {
+                    font-family: ElegantIcons !important;
+                }
+            }
+
+            .page-right {
+
+                .booked-icon {
+
+                    &:before {
+                        content: "\35";
+                    }
+                }
+
+                &:hover {
+                    right: 20px;
+                    color: $default-background-color;
+                }
+            }
+
+            .page-left {
+
+                .booked-icon {
+
+                    &:before {
+                        content: "\34";
+                    }
+                }
+
+                &:hover {
+                    left: 20px;
+                    color: $default-background-color;
+                }
+            }
+        }
+
+        thead {
+            background-color: #000 !important;
+
+            th {
+                font-family: $heading-text-font !important;
+                font-size: 15px !important;
+                font-weight: 700 !important;
+            }
+        }
+
+        .calendarSavingState {
+            color: $default-background-color;
+        }
+
+        .monthName {
+            @include qodefH6(!important);
+
+            color: $default-background-color !important;
+
+            .backToMonth {
+                display: none;
+            }
+        }
+
+        @at-root body .large {
+
+            table.booked-calendar {
+
+                .monthName {
+                    @include qodefH6(!important);
+                }
+            }
+        }
+
+        .page-left,
+        .page-right {
+            margin-top: -1rem !important;
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // tr
+
+        tr {
+            border: none;
+            background: #000;
+        }
+
+        tbody {
+            background: #000;
+            font-family: $heading-text-font;
+            font-weight: 700;
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // list within calendar
+
+        tr.entryBlock {
+            background-color: transparent;
+
+            td {
+                padding: 0 !important;
+
+                h2 {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // days
+
+        tr.days {
+            background: transparent !important;
+            text-transform: uppercase;
+
+            th {
+                background: transparent !important;
+                border: none !important;
+                color: #434343 !important;
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // td
+
+        td {
+            background: #000;
+            border: none !important;
+            color: $default-background-color;
+            font-size: 1rem;
+
+            .date {
+                background: transparent !important;
+
+                .number {
+                    width: 100%;
+                    height: 100%;
+                    line-height: inherit;
+                    border-radius: 0;
+                    font-weight: 700;
+                }
+            }
+
+            // active
+            &.active {
+                background-color: transparent !important;
+
+                .date {
+                    background-color: $default-background-color !important;
+
+                    .number {
+                        background-color: $default-background-color !important;
+                        color: #000 !important;
+                        transform: scale(1) !important;
+                    }
+                }
+            }
+
+            // prev month
+            &.prev-month .date {
+                background: transparent;
+
+                span {
+                    color: #292929 !important;
+                }
+
+                &:hover {
+                    color: #292929 !important;
+
+                    span {
+                        color: #292929 !important;
+                    }
+                }
+            }
+
+            // next month
+            &.next-month .date:not(.tooltipster) {
+                background: transparent;
+
+                span {
+                    color: #747474 !important;
+                }
+
+                &:hover {
+                    color: #747474 !important;
+
+                    span {
+                        color: #747474 !important;
+                    }
+                }
+            }
+
+            &.next-month .date.tooltipster {
+                background: transparent;
+
+                span {
+                    color: #747474 !important;
+                }
+
+                &:hover {
+                    color: #000 !important;
+
+                    span {
+                        color: #000 !important;
+                    }
+                }
+            }
+
+            // today
+            &.today,
+            &.today.prev-date {
+                background: $first-main-color !important;
+                color: #000 !important;
+
+                .date span {
+                    background: $first-main-color !important;
+                    border: none !important;
+                    color: #000 !important;
+                }
+
+                &:hover {
+
+                    .date span {
+                        background: $first-main-color !important;
+                        border: none !important;
+                        color: inherit !important;
+                    }
+                }
+            }
+
+            // illegible date
+            &.prev-date .date,
+            &.prev-date .date span,
+            &.prev-date:hover .date,
+            &.prev-date:hover .date span {
+                background: transparent !important;
+                color:#777 !important;
+            }
+            &:hover {
+
+                .date span {
+                    background-color: $first-main-color;
+                    color: #000 !important;
+                }
+            }
+	
+	        &.today.prev-date:hover .date {
+		        color: #000 !important;
+	        }
+        }
+    }
+}
+
+.no-touch body.qodef-safari .booked-calendar-shortcode-wrap .booked-calendar-wrap {
+	margin-right: 0;
+}

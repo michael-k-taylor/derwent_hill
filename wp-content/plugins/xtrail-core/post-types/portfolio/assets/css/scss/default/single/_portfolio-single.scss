@@ -1,0 +1,233 @@
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	@include qodefRelativeHolderLayout();
+	margin: 0;
+	
+    .qodef-ps-image-holder {
+	    @include qodefRelativeHolderLayout();
+	    
+	    .qodef-ps-image {
+		    
+		    &:not(.qodef-item-space) {
+			    @include qodefRelativeHolderLayout();
+			    box-sizing: border-box;
+		    }
+		    
+		    a, img {
+			    position: relative;
+			    display: block;
+		    }
+	    }
+    }
+	
+	.qodef-ps-info-holder {
+		@include qodefRelativeHolderLayout();
+		
+		.qodef-ps-info-item {
+			@include qodefRelativeHolderLayout();
+			margin: 0 0 4px;
+
+			.qodef-ps-info-title {
+				display: inline-block;
+			}
+			
+			.qodef-section-title-holder .qodef-st-text {
+				margin-top: 5px;
+			}
+			
+			p, a {
+				margin: 0;
+				display: inline-block;
+			}
+
+			.qodef-social-share-holder li a {
+				font-size: 13px;
+			}
+
+			.qodef-social-title {
+				@include qodefHeadingStyle();
+				@include qodefH5();
+				margin: 0 15px 0 0;
+			}
+
+			&.qodef-ps-social-share {
+				margin: 62px 0 34px;
+			}
+			
+			&:last-of-type {
+				bottom: 40px //Fixes scrolling below main content
+			}
+		}
+		
+		.qodef-ps-info-title {
+			margin: 0;
+			font-size: 13px;
+			line-height: 25px;
+			min-width: 89px;
+		}
+
+		> h6.qodef-ps-info-title {
+			@include qodefH5();
+			margin: 0 0 12px;
+		}
+
+		.qodef-social-title {
+			@include qodefH5();
+		}
+
+		.qodef-ps-info-tag,
+		.qodef-ps-info-category {
+			text-transform: capitalize;
+
+			&:after {
+				content: ',';
+			}
+
+			&:last-child {
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+
+	.qodef-ps-content-item {
+		.qodef-btn {
+			margin: 28px 0 34px;
+		}
+
+		h1:first-child,
+		h2:first-child,
+		h3:first-child,
+		h4:first-child,
+		h5:first-child,
+		h6:first-child {
+			display: inline-block;
+			position: relative;
+			margin-bottom: 20px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -22px;
+				width: 72px;
+				height: 3px;
+				background-color: #fed620;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	
+	.qodef-ps-image-holder {
+		
+		&.qodef-grid-masonry-list {
+			
+			.qodef-ps-image {
+				
+				a {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	&.qodef-ps-images-layout,
+	&.qodef-ps-gallery-layout,
+	&.qodef-ps-slider-layout,
+	&.qodef-ps-masonry-layout {
+		
+		.qodef-ps-content-item {
+			h1:first-child,
+			h2:first-child,
+			h3:first-child,
+			h4:first-child,
+			h5:first-child,
+			h6:first-child {
+				margin-top: 0;
+				margin-bottom: 29px;
+				
+				&:after {
+					bottom:-23px;
+				}
+			}
+		}
+		
+		.qodef-ps-info-holder {
+			padding: 25px 30px 0 111px;
+		}
+	}
+
+	&.qodef-ps-masonry-layout {
+
+		.qodef-ps-info-holder {
+			padding: 25px 30px 0 111px;
+		}
+	}
+
+	&.qodef-ps-small-masonry-layout,
+	&.qodef-ps-small-images-layout,
+	&.qodef-ps-small-gallery-layout,
+	&.qodef-ps-small-slider-layout,
+	&.qodef-ps-huge-images-layout {
+
+		.qodef-ps-info-holder {
+			padding-left: 22px;
+
+			.qodef-ps-content-item {
+				h1:first-child,
+				h2:first-child,
+				h3:first-child,
+				h4:first-child,
+				h5:first-child,
+				h6:first-child {
+					margin-top: 21px;
+					margin-bottom: 37px;
+				}
+			}
+		}
+	}
+	
+	&.qodef-ps-small-masonry-layout,
+	&.qodef-ps-small-gallery-layout {
+		.qodef-ps-navigation {
+			margin-top: 42px;
+		}
+	}
+	
+	&.qodef-ps-big-masonry-layout,
+	&.qodef-ps-small-slider-layout,
+	&.qodef-ps-huge-images-layout {
+		.qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+			margin: 62px 0 0;
+		}
+	}
+	
+	&.qodef-ps-small-masonry-layout {
+		.qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+			margin: 62px 0 15px;
+		}
+	}
+	
+	&.qodef-ps-small-gallery-layout {
+		.qodef-ps-info-holder .qodef-ps-info-item.qodef-ps-social-share {
+			margin: 62px 0 20px;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */

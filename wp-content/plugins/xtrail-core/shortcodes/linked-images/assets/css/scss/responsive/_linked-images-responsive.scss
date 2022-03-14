@@ -1,0 +1,169 @@
+/* ==========================================================================
+# Linked Images Responsive style - begin
+========================================================================== */
+.qodef-linked-images {
+	
+	&.qodef-linked-images-three-images,
+	&.qodef-linked-images-four-images,
+	&.qodef-linked-images-five-images {
+		
+		@include ipad-portrait {
+			
+			.qodef-linked-image-holder {
+				width: 50%;
+				
+				&:nth-child(2n+1) {
+					clear: both;
+				}
+			}
+		}
+		
+		@include phone-landscape {
+			
+			.qodef-linked-image-holder {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include laptop-landscape-large {
+	
+	.qodef-linked-images .qodef-linked-image-holder {
+
+		&.qodef-li-text-slide {
+
+			.qodef-linked-image-image-holder {
+
+				.qodef-linked-image-description-wrapper {
+
+					.qodef-linked-image-description {
+
+						.qodef-linked-image-title {
+							bottom: 335px;
+							font-size: 150px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1366px) {
+
+	.qodef-linked-images {
+
+		.qodef-linked-expanding-images & {
+
+			.qodef-linked-image-holder {
+	
+				.qodef-linked-image-image {
+					background-size: cover !important;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1280px) {
+
+	.qodef-linked-images {
+
+		.qodef-linked-expanding-images & {
+
+			.qodef-linked-image-holder {
+	
+				.qodef-linked-image-image {
+					background-size: contain !important;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1366px) and (max-height: 645px){
+
+	.qodef-linked-images {
+		
+		.qodef-linked-expanding-images & {
+		
+			.qodef-linked-image-holder {
+	
+				.qodef-linked-image-image {
+					background-size: contain !important;
+					transform: scale(1.5) !important;
+					background-position: 40px 0px !important;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+	
+	.qodef-linked-images .qodef-linked-image-holder {
+
+		&.qodef-li-text-slide {
+
+			.qodef-linked-image-image-holder {
+
+				.qodef-linked-image-description-wrapper {
+
+					.qodef-linked-image-description {
+						.qodef-linked-image-title {
+							opacity: 1;
+							transform: translateX(-53%) rotate(-20deg);
+						}
+						.qodef-linked-image-text {
+							opacity: 1;
+							margin: 17px 15% 0 0;
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.qodef-linked-images {
+		
+		.qodef-linked-expanding-images & {
+		
+			.qodef-linked-image-holder {
+	
+				.qodef-linked-image-image {
+					background-size: cover !important;
+					transform: scale(1) !important;
+					background-position: 0 0px !important;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+	.qodef-linked-image-holder {
+		&.qodef-li-text-slide .qodef-linked-image-image-holder .qodef-linked-image-description-wrapper .qodef-linked-image-title {
+			bottom: 300px !important;
+			font-size: 125px !important;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.qodef-linked-image-holder.qodef-li-text-slide .qodef-linked-image-image-holder .qodef-linked-image-description-wrapper .qodef-linked-image-title {
+		bottom: 265px !important;
+	}
+}
+
+@include phone-landscape {
+	.qodef-linked-image-image {
+		height: 100vh !important;
+	}
+}
+
+/* ==========================================================================
+# Linked Images Responsive style - end
+========================================================================== */

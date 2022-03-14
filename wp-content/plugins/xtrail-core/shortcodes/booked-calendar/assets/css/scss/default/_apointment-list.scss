@@ -1,0 +1,235 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// booked appointments
+
+.booked-appt-list {
+    $slot-padding: 28px 27px;
+    $nav-height: 30px;
+    $button-height: 38px;
+
+    background-color: #000 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: inline-block;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    padding: 0 25px 25px !important;
+    width: 100%;
+    box-sizing: border-box;
+
+    h2 {
+        @include qodefH6(!important);
+
+        background-color: $default-background-color;
+        color: $default-text-color !important;
+        margin: $nav-height 0 0 0 !important;
+        padding: 28px 27px 21px !important;
+        text-align: center !important;
+
+        span {
+            display: none;
+        }
+    }
+
+    .booked-list-view-nav {
+        height: $nav-height !important;
+        left: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+
+        .booked-list-view-date-prev,
+        .booked-list-view-date-next,
+        .booked-datepicker-wrap,
+        .booked-datepicker-wrap a {
+            background: transparent;
+            border: none;
+            color: $default-text-color;
+            cursor: pointer;
+            display: block;
+            height: $nav-height;
+            line-height: $nav-height;
+            overflow: hidden;
+            position: absolute !important;
+            text-align: center;
+            text-indent: -999px;
+            top: 0 !important;
+            width: $nav-height;
+
+            i {
+                height: $nav-height;
+                left: 0;
+                line-height: $nav-height;
+                position: absolute;
+                text-indent: 0;
+                top: 0;
+                width: $nav-height;
+            }
+
+            &:hover {
+                background: transparent;
+                color: $first-main-color;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .booked-list-view-date-prev {
+            left: 0 !important;
+        }
+
+        .booked-list-view-date-next {
+            right: 35px !important;
+        }
+
+        .booked-datepicker-wrap a {
+            right: 0 !important;
+        }
+    }
+
+    .booked_list_date_picker_trigger.booked-dp-active {
+        background-color: $first-main-color !important;
+        color: $default-text-color !important;
+    }
+
+    .timeslot {
+        margin: 0 !important;
+        padding: 7px 16px !important;
+        border-top: none !important;
+        background-color: $default-background-color;
+
+        &:hover {
+            background-color: $default-background-color !important;
+        }
+
+        .timeslot-time {
+            display: none !important;
+            min-height: #{$button-height + 2px} !important;
+            padding: 0 !important;
+        }
+
+        .timeslot-title {
+            @include qodefBody(!important);
+
+            color: $first-main-color !important;
+            line-height: 1em !important;
+            margin: 0 !important;
+        }
+
+        .timeslot-range {
+            @include qodefBody(!important);
+
+            color: $default-text-color;
+            display: block;
+            line-height: 1em !important;
+            margin: 10px 0;
+        }
+
+        .booked-icon {
+            color: $default-text-color !important;
+        }
+
+        .spots-available {
+            @include qodefH5(!important);
+
+            color: $default-text-color !important;
+            padding: 0 !important;
+        }
+
+        .timeslot-people {
+            float: none !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 0 !important;
+
+            .booked-calendar-wrap.small & {
+                height: auto !important;
+            }
+
+            button {
+                float: none !important;
+                width: 100% !important;
+
+                > span {
+                    display: block !important;
+                }
+            }
+        }
+
+        button.button {
+            margin: 0 !important;
+            padding: 10px 0 13px 0;
+            background-color: #000 !important;
+            border: none !important;
+            color: #ffffff !important;
+            cursor: pointer;
+
+            .timeslot-mobile-title {
+                font-family: $heading-text-font !important;
+                font-size: 15px !important;
+                font-weight: 700 !important;
+                text-transform: uppercase !important;
+            }
+
+            .spots-available {
+                font-family: $default-text-font !important;
+                font-size: 14px !important;
+                font-weight: 400 !important;
+                line-height: 2em !important;
+                color: $default-background-color !important;
+                text-transform: capitalize !important;
+            }
+
+            .button-timeslot {
+                font-family: $heading-text-font !important;
+                font-size: 15px !important;
+                font-weight: 700 !important;
+                line-height: 0.9em;
+                text-transform: uppercase !important;
+            }
+
+            .button-text {
+                display: none !important;
+            }
+
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+                background-color: $first-main-color !important;
+                border: none !important;
+
+                .timeslot-mobile-title,
+                .button-timeslot,
+                .button-text,
+                .spots-available {
+                    color: $default-heading-color !important;
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        @at-root body table.booked-calendar {
+
+            .booked-appt-list .timeslot .timeslot-people button.button:hover {
+                background-color: $first-main-color !important;
+                border: none !important;
+            }
+        }
+
+        &:last-child {
+            padding: 7px 16px 31px 16px !important;
+        }
+    }
+
+    p {
+        color: $default-text-color !important;
+        padding: $slot-padding;
+
+        @include qodefBody(!important);
+    }
+}

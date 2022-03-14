@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+	@include qodefRelativeHolderLayout();
+	
+	$columns: ('two', 'three', 'four');
+	@for $i from 0 to length($columns) {
+		&.qodef-#{nth($columns, $i+1)}-columns {
+			$column_width: 100%/($i+2);
+			
+			.qodef-process-item {
+				width: $column_width;
+			}
+		}
+	}
+	
+	&.qodef-process-appeared {
+		
+		.qodef-process-item {
+
+			&:nth-child(1) {
+
+				.qodef-pi-image {
+
+					img {
+						animation: qodef-process-clip-path 1s forwards;
+					}
+					
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+
+			@for $i from 2 to 5 {
+			
+				&:nth-child(#{$i}) {
+
+					.qodef-pi-image {
+
+						img {
+							animation: qodef-process-clip-path 2s forwards;
+							animation-delay: #{.3 * ($i - 1)}s !important;
+						}
+						
+						&:before {
+							opacity: 1;
+							transition: .5s;
+							transition-delay: #{.5 * ($i - 1)}s !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@keyframes qodef-process-clip-path {
+		0% {
+			clip-path: circle(0%);
+		}
+		100% {
+			clip-path: circle(100%);
+		}
+	}
+	
+	.qodef-process-inner {
+		margin: 0 -15px;
+		counter-reset: section;
+	}
+	
+	.qodef-process-item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		padding: 0 15px;
+		text-align: center;
+		box-sizing: border-box;
+		counter-increment: section;
+	
+		&:nth-child(2) {
+			top: -31px;
+		}
+
+		&:nth-child(3) {
+			top: -130px;
+
+			.qodef-pi-image {
+
+				img {
+					width: 311px;
+					height: 311px;
+				}
+
+				&:before {
+					font-size: 116px;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			top: -72px;
+		}
+	}
+
+	.qodef-pi-image {
+		@include qodefRelativeHolderLayout();
+
+		img {
+			display: block;
+			margin: 0 auto;
+			padding: 10px;
+			width: 212px;
+			height: 212px;
+			border-radius: 50%;
+			border: 1px solid #d9d9d9;
+			box-sizing: border-box;
+			clip-path: circle(0%);
+		}
+
+		&:before {
+			content: counter(section);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			display: block;
+			font-family: $additional-text-font;
+			font-size: 80px;
+			color: $default-background-color;
+			z-index: 2;
+			opacity: 0;
+		}
+	}
+	
+	.qodef-pi-content {
+		@include qodefRelativeHolderLayout();
+		margin: 28px 0 10px;
+	}
+	
+	.qodef-pi-title {
+		margin: 0;
+	}
+	
+	.qodef-pi-text {
+		margin: 7px 0 0;
+		padding: 0 16%;
+		box-sizing: border-box;
+	}
+}
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

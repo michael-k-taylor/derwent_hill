@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1440px) {
+
+	.qodef-anchor-menu-outer {
+		left: 24px;
+		width: 126px;
+
+		.qodef-anchor{
+
+			.qodef-anchor-menu-item-number{
+				padding: 0;
+			}
+
+			&.current{
+
+				.qodef-anchor-menu-item-number{
+					transform: scale(1.3);
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+
+	.qodef-anchor-menu-outer {
+		left: 38px;
+		width:112px;
+	}
+}
+
+@media only screen and (max-width: $ipad-landscape) {
+
+	.qodef-anchor-menu-outer {
+		display: none;
+	}
+}
