@@ -18,24 +18,24 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'derwent_friends' );
 
-/** MySQL database username */
-define( 'DB_USER', 'root' );
-
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
-
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
-
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
-
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+$domainArray = explode('.', $_SERVER['HTTP_HOST']);
+if(in_array('local', $domainArray)) {
+    define( 'DB_NAME', 'derwent_friends' );
+    define( 'DB_USER', 'root' );
+    define( 'DB_PASSWORD', 'root' );
+    define( 'DB_HOST', '127.0.0.1' );
+}elseif(in_array('test', $domainArray)) {
+    define( 'DB_NAME', 'derwent_friends' );
+    define( 'DB_USER', 'root' );
+    define( 'DB_PASSWORD', '' );
+    define( 'DB_HOST', '127.0.0.1' );
+}elseif(in_array('app', $domainArray)) {
+    define( 'DB_NAME', 'derwent_friends' );
+    define( 'DB_USER', 'derwent_friends' );
+    define( 'DB_PASSWORD', 'xN8b43e_' );
+    define( 'DB_HOST', '127.0.0.1' );
+}
 
 /**#@+
  * Authentication unique keys and salts.
